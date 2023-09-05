@@ -1,0 +1,11 @@
+export { default as Navbar } from "./Navbar/Navbar";
+export { default as NavbarQui } from "./NavQui/NavbarQui";
+export { default as NavbarMe } from "./NavbarMe/Navbar";
+export { default as Slider } from "./Slider/Slider";
+export { default as Basket } from "./Basket/Basket";
+export { default as Subtotal } from "./Subtotal/Subtotal";
+export { default as Body } from "./Body/Body";
+export { default as About } from "./About/About";
+export { default as Header } from "./Header/Header";
+export { default as Who } from "./Who/Who";
+export { default as Footer } from "./Footer/Footer";

@@ -1,0 +1,125 @@
+[
+  {
+    "questionText": "When Anne was a young girl, she _______ spend hours every day reading books in her room:",
+    "answerOptions": [
+      { "answerText": "used", "isCorrect": false },
+      { "answerText": "would", "isCorrect": true },
+      { "answerText": "was", "isCorrect": false },
+      { "answerText": "should", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "The argument raised by Lucy seems to be a critical _______ in our community today.",
+    "answerOptions": [
+      { "answerText": "subject", "isCorrect": false },
+      { "answerText": "theme", "isCorrect": false },
+      { "answerText": "issue", "isCorrect": true },
+      { "answerText": "point", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Where did the man spend his vacation?",
+    "audioUrl": "https://myenglevel.s3.me-south-1.amazonaws.com/dalilk-intermediate_02.mp3",
+    "answerOptions": [
+      { "answerText": "in a hotel", "isCorrect": false },
+      { "answerText": "with friends", "isCorrect": false },
+      { "answerText": "at campsite", "isCorrect": true },
+      { "answerText": "in a cottage", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Regrettably, our rented apartment was a(n) _______ distance away from the city center.",
+    "answerOptions": [
+      { "answerText": "sizeable", "isCorrect": false },
+      { "answerText": "extensive", "isCorrect": false },
+      { "answerText": "considerable", "isCorrect": true },
+      { "answerText": "substantial", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Susan has insisted _______ buying gifts for everyone.",
+    "answerOptions": [
+      { "answerText": "in", "isCorrect": false },
+      { "answerText": "for", "isCorrect": false },
+      { "answerText": "to", "isCorrect": false },
+      { "answerText": "on", "isCorrect": true },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "The young musician's talent is starting to gain _______ around the world.",
+    "answerOptions": [
+      { "answerText": "knowledge", "isCorrect": false },
+      { "answerText": "understanding", "isCorrect": false },
+      { "answerText": "familiarity", "isCorrect": false },
+      { "answerText": "recognition", "isCorrect": true },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "This fish is perfectly _______ - what seasoning did you use?",
+    "answerOptions": [
+      { "answerText": "tender", "isCorrect": true },
+      { "answerText": "mild", "isCorrect": false },
+      { "answerText": "soft", "isCorrect": false },
+      { "answerText": "gentle", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What type of seminar is being arranged?",
+    "audioUrl": "https://myenglevel.s3.me-south-1.amazonaws.com/dalilk-intermediate_12.mp3",
+    "answerOptions": [
+      { "answerText": "a science and technology seminar", "isCorrect": false },
+      { "answerText": "a historical seminar", "isCorrect": true },
+      { "answerText": "a television broadcast", "isCorrect": false },
+      { "answerText": "a musical seminar", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Liam's parents _______ and hence, they would be thrilled to attend the art exhibition.",
+    "answerOptions": [
+      { "answerText": "very much like Monet's paintings", "isCorrect": true },
+      { "answerText": "like Monet's paintings very much", "isCorrect": false },
+      { "answerText": "like much Monet's paintings", "isCorrect": false },
+      { "answerText": "much like Monet's paintings", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Did you face any difficulties _______ our office?",
+    "answerOptions": [
+      { "answerText": "to find", "isCorrect": false },
+      { "answerText": "finding", "isCorrect": true },
+      { "answerText": "for finding", "isCorrect": false },
+      { "answerText": "find", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Have you visited the school _______ you studied?",
+    "answerOptions": [
+      { "answerText": "who", "isCorrect": false },
+      { "answerText": "which", "isCorrect": false },
+      { "answerText": "when", "isCorrect": false },
+      { "answerText": "where", "isCorrect": true },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Where is the questioning being held?",
+    "audioUrl": "https://myenglevel.s3.me-south-1.amazonaws.com/dalilk-intermediate_08.mp3",
+    "answerOptions": [
+      { "answerText": "in a university", "isCorrect": true },
+      { "answerText": "in a park", "isCorrect": false },
+      { "answerText": "in a courtroom", "isCorrect": false },
+      { "answerText": "in a police station", "isCorrect": false },
+      { "answerText": "لا اعرف", "isCorrect": false }
+    ]
+  }
+]
