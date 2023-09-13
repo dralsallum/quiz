@@ -4,7 +4,7 @@ export const Subtotalwrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 400px;
   height: 130px;
   padding: 20px;
   background-color: #f3f3f3;
@@ -15,6 +15,8 @@ export const Subtotalwrapper = styled.div`
 export const GiftContainer = styled.small`
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
+  color: gray;
 `;
 
 export const Giftinput = styled.input`
@@ -30,4 +32,5 @@ export const GiftButton = styled.button`
   margin-top: 10px;
   border-color: #a88734 #a9c7e31 #846a29;
   color: #ffffff;
+  cursor: pointer;
 `;

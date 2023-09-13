@@ -31,6 +31,11 @@ export const SliderArrowContainer1 = styled.div`
   font-size: 1.6rem;
   font-weight: bold;
   color: #2946b6;
+
+  @media screen and (max-width: 960px) {
+    font-size: 1.3rem;
+    padding-top: 0.4rem;
+  }
 `;
 
 export const SliderArrowButtonRight = styled.button`
@@ -148,9 +153,10 @@ export const SliderCardSubSpan1 = styled.div`
   display: flex;
   align-items: center;
 `;
-export const SliderCardSubSpan2 = styled.span`
-  font-size: 1.2rem;
-  font-weight: 600;
+export const SliderCardSubSpan2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const SliderCardSubSpan3 = styled.div`
   color: #000000;
@@ -167,4 +173,26 @@ export const SliderCardSubSpan4 = styled.span`
   color: rgb(140 139 139);
   font-size: 0.7rem;
   width: 15rem;
+`;
+
+export const Button = styled.button`
+  border-radius: 4px;
+  background: #2946b6;
+  white-space: nowrap;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    background: #000000;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
 `;

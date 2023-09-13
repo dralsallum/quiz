@@ -5,16 +5,18 @@ import {
   Giftinput,
   Subtotalwrapper,
 } from "./Subtotal.elements";
+import { useNavigate } from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
 
-const Subtotal = () => {
+const Subtotal = ({ subtotal }) => {
+  const navigate = useNavigate();
   return (
     <Subtotalwrapper>
       <CurrencyFormat
         renderText={(value) => (
           <>
             <p>
-              مجموع المشتريات (0 عناصر): <strong>{value}</strong>
+              مجموع المشتريات في السلة : <strong>{value} ريال </strong>
             </p>
             <GiftContainer>
               <Giftinput type="checkbox" /> هذا الطلب يحتوي هدية
@@ -22,13 +24,11 @@ const Subtotal = () => {
           </>
         )}
         decimalScale={2}
-        prefix={" ريال "}
-        value={0}
+        value={subtotal}
         displayType={"text"}
         thousandSeparator={true}
       />
-
-      <GiftButton>انتقل للدفع</GiftButton>
+      <GiftButton onClick={(e) => navigate("/payment")}>انتقل للدفع</GiftButton>
     </Subtotalwrapper>
   );
 };

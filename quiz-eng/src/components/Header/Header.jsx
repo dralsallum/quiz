@@ -60,6 +60,18 @@ const Header = () => {
               شخص
             </HeaderButton>
           </Link>
+          <Link
+            to="/train"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <HeaderButton>
+              حدد مستواك مع{" "}
+              <span>
+                <CountUp start={8000} end={1200000} duration={3} />
+              </span>{" "}
+              شخص
+            </HeaderButton>
+          </Link>
         </HeaderContainer>
         <HeaderImgContainer>
           <HeaderImg src={EngImg} />

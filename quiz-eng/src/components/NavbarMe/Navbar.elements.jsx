@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Container } from "../../globalStyles";
+import { Container, Button } from "../../globalStyles";
 import { FaShoppingBasket } from "react-icons/fa";
 
 export const Nav = styled.nav`
@@ -19,24 +19,19 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  ${Container}
+  align-items: center;
 `;
 
 export const NavbarContainerImg = styled.img`
   object-fit: cover;
   width: 11rem;
+
+  @media screen and (max-width: 960px) {
+    width: 9rem;
+  }
 `;
 
-export const NavbarLogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #ffffff;
-  padding-top: 1rem;
-`;
-
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.div`
   color: #000000;
   justify-content: flex-start;
   cursor: pointer;
@@ -44,6 +39,7 @@ export const NavLogo = styled(Link)`
   font-size: 2rem;
   display: flex;
   align-items: center;
+  padding-top: 1.4rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -79,11 +75,12 @@ export const NavItemBasket = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 70px;
   border-bottom: 2px solid transparent;
 
-  &:hover {
-    border-bottom: 2px solid #4b59f7;
+  @media screen and (max-width: 960px) {
+    height: 40px;
+    padding-right: 5px;
   }
 `;
 
@@ -106,12 +103,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-decoration: none;
-padding: 8px 16px;
 height 100%;
 width: 100%;
 border: none;
 outline: none;
-
 
 `;
 
@@ -123,9 +118,35 @@ export const NavBtnBaskets = styled(FaShoppingBasket)`
   outline: none;
   cursor: pointer;
   margin: 0.2rem;
+
+  @media screen and (max-width: 960px) {
+    height 100%;
+    width: 100%;
+  }
 `;
+
 export const NavBtnBasketsSpan = styled.span`
   font-size: 1.4rem;
+
+  &.animate {
+    animation: pop 300ms ease-in-out;
+  }
+
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -134,5 +155,12 @@ export const ButtonContainer = styled.div`
 
   @media screen and (max-width: 960px) {
     display: flex;
+  }
+`;
+
+export const ButtonMain = styled(Button)`
+  @media screen and (max-width: 960px) {
+    padding: 0.5rem;
+    font-size: 0.8rem;
   }
 `;

@@ -166,8 +166,6 @@ const Body = () => {
               <ScoreSectionImg src={getScoreSVG(score)} alt="score indicator" />
             </ScoreSectionbackground>
             <h3> درجتك التقريبية في الايلتس </h3>
-
-            <h5> بتجهيز اسبوع للاختبار</h5>
             <br />
             {Math.round(score)}
 

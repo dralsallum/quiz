@@ -59,8 +59,11 @@ export const HeaderButton = styled.button`
   font-size: 1.4rem;
   margin-top: 1rem;
 
+}
+
   &:hover {
     cursor: pointer;
+
   }
 
   @media screen and (max-width: 991px) {

@@ -1,28 +1,24 @@
 [
   {
-    "name": " Whisper in the Rails",
-    "price": "٤٩ريال",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "../../assets/r1.png"
+    "name": "Whispers in the Rails",
+    "price": "49",
+    "image": "../../assets/Whispers in the Rails.jpg"
   },
 
   {
     "name": "Friends Forever",
-    "price": "٤٩ريال",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "price": "49",
     "image": "./r3.png"
   },
 
   {
     "name": "Behind Grey Eyes",
-    "price": "٤٩ريال",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+    "price": "49",
     "image": "./r2.png"
   },
   {
     "name": "Beyond the clock",
-    "price": "٤٩ريال",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "price": "49",
     "image": "./r3.png"
   }
 ]

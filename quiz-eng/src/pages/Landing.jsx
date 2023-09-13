@@ -1,5 +1,13 @@
 import React, { useEffect } from "react";
-import { Slider, NavbarMe, Header, About, Who, Footer } from "../components";
+import {
+  Slider,
+  NavbarMe,
+  Header,
+  About,
+  Who,
+  Footer,
+  FooterMe,
+} from "../components";
 import { analytics } from "../firebase";
 import { logEvent } from "firebase/analytics";
 
@@ -15,7 +23,7 @@ const Landing = () => {
       <Slider />
       <About />
       <Who />
-      <Footer />
+      <FooterMe />
     </>
   );
 };

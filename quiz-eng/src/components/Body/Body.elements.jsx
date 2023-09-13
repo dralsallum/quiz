@@ -144,4 +144,8 @@ export const Inputfield = styled.input`
   outline: none;
   height: 3.5rem;
   font-size: 26px;
+
+  @media screen and (max-width: 960px) {
+    width: 85%;
+  }
 `;

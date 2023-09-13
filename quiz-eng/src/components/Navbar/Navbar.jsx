@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <NavbarContainer>
-      <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+    <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+      <NavbarContainer>
         <NavbarContainerImg src={Logo} />
-      </Link>
-    </NavbarContainer>
+      </NavbarContainer>
+    </Link>
   );
 };
 
