@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/12english-logo.png";
+import Logo from "../../assets/main-english-logo.png";
 import {
   Nav,
   NavbarContainer,
@@ -58,11 +58,10 @@ const NavbarMe = () => {
             style={{
               textDecoration: "none",
               color: "inherit",
-              backgroundColor: "#ffffff",
             }}
           >
             <NavItemBasket>
-              <NavBtnBaskets color="2946b6" />
+              <NavBtnBaskets color="#ffffff" />
               <NavBtnBasketsSpan className={animate ? "animate" : ""}>
                 {basketCount}
               </NavBtnBasketsSpan>

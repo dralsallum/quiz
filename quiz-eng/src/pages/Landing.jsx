@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styled from "styled-components";
 import {
   Slider,
   NavbarMe,
@@ -11,6 +12,11 @@ import {
 import { analytics } from "../firebase";
 import { logEvent } from "firebase/analytics";
 
+const GradientWrapper = styled.div`
+  background: linear-gradient(to top, #6e00f8, #563ce9, #116eee);
+  padding-bottom: 1rem;
+`;
+
 const Landing = () => {
   useEffect(() => {
     logEvent(analytics, "landing_page_visited");
@@ -18,8 +24,10 @@ const Landing = () => {
 
   return (
     <>
-      <NavbarMe />
-      <Header />
+      <GradientWrapper>
+        <NavbarMe />
+        <Header />
+      </GradientWrapper>
       <Slider />
       <About />
       <Who />

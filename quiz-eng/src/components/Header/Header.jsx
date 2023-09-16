@@ -1,5 +1,5 @@
 import React from "react";
-import EngImg from "../../assets/undraw_online_test_re_kyfx.svg";
+import EngImg from "../../assets/header-hello.png";
 import {
   HeaderButton,
   HeaderContainer,
@@ -29,7 +29,7 @@ const Header = () => {
             <HeaderElements>
               <FontAwesomeIcon
                 icon={faMoneyBill}
-                style={{ color: "#2946b6", marginLeft: "0.25rem" }}
+                style={{ color: "#ffffff", marginLeft: "0.25rem" }}
               />
               مجاناً وبدون ما تضطر تدفع اي مبلغ مالي للاختبار
             </HeaderElements>
@@ -37,7 +37,7 @@ const Header = () => {
               <FontAwesomeIcon
                 icon={faPenSquare}
                 style={{
-                  color: "#2946b6",
+                  color: "#ffffff",
                   marginLeft: "0.25rem",
                 }}
               />
@@ -46,20 +46,12 @@ const Header = () => {
             <HeaderElements>
               <FontAwesomeIcon
                 icon={faHeart}
-                style={{ color: "#2946b6", marginLeft: "0.25rem" }}
+                style={{ color: "#ffffff", marginLeft: "0.25rem" }}
               />
               يعلمك قدراتك التقريبية في اختبار الايلتس والستيب
             </HeaderElements>
           </HeaderList>
-          <Link to="/home" style={{ textDecoration: "none", color: "inherit" }}>
-            <HeaderButton>
-              حدد مستواك مع{" "}
-              <span>
-                <CountUp start={8000} end={1200000} duration={3} />
-              </span>{" "}
-              شخص
-            </HeaderButton>
-          </Link>
+
           <Link
             to="/train"
             style={{ textDecoration: "none", color: "inherit" }}

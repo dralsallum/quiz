@@ -3,7 +3,11 @@ import SuperHeroSVG from "../../assets/super-hero.svg";
 
 export const QuestionMain = styled.main`
   position: relative;
-  margin-top: 4rem;
+  margin-top: 3rem;
+
+  @media screen and (max-width: 50rem) {
+    margin-top: 1rem;
+  }
 `;
 
 export const QuestionWrapper = styled.div`
@@ -342,14 +346,18 @@ export const QuestionChapterPictureStop = styled.stop`
   stop-color: rgb(17, 110, 238);
 `;
 export const QuestionChapterPictureCircle = styled.circle``;
+//this the circle
 export const QuestionChapterPictureSection = styled.div`
   margin: 0px auto;
   position: absolute;
   display: block;
   border-radius: 50%;
   overflow: hidden;
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 5.25rem;
+  height: 5.25rem;
+  padding: 0.2rem;
+
+  border: ${(props) => (props.completed ? "3px solid green" : "inherit")};
 `;
 export const QuestionChapterPicture = styled.img`
   width: 100%;

@@ -18,17 +18,25 @@ import {
 } from "./TestNav.elements";
 import Cross from "../../assets/cross.svg";
 import Heart from "../../assets/Heart.svg";
+import { Link } from "react-router-dom";
 
-const TestNav = () => {
-  const [progress, setProgress] = useState(50);
+const TestNav = ({ progress, hearts }) => {
   return (
     <>
       <LearnWrapperTop>
         <LearnContainerTop>
           <LearnNav>
-            <LearnNavButton>
-              <LearnNavButtonImg src={Cross} />
-            </LearnNavButton>
+            <Link
+              to="/train"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+              }}
+            >
+              <LearnNavButton>
+                <LearnNavButtonImg src={Cross} />
+              </LearnNavButton>
+            </Link>
             <LearnNavProgressContainer>
               <LearnNavProgressWrapper>
                 <LearnNavProgressTop>
@@ -42,7 +50,7 @@ const TestNav = () => {
             </LearnNavProgressContainer>
             <LearnNavHeartContainer>
               <LearnNavHeartImg src={Heart} />
-              <LearnNavHeartSpan>5</LearnNavHeartSpan>
+              <LearnNavHeartSpan>{hearts}</LearnNavHeartSpan>
             </LearnNavHeartContainer>
           </LearnNav>
         </LearnContainerTop>

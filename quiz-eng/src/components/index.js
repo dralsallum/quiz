@@ -8,6 +8,8 @@ export { default as Learn } from "./Learn/Learn";
 export { default as TestNav } from "./TestNav/TestNav";
 export { default as Subtotal } from "./Subtotal/Subtotal";
 export { default as Products } from "./Products/Products";
+export { default as Project } from "./Project/Project";
+export { default as Sure } from "./Sure/Sure";
 export { default as Body } from "./Body/Body";
 export { default as Question } from "./Question/Question";
 export { default as SignForm } from "./SignForm/SignForm";

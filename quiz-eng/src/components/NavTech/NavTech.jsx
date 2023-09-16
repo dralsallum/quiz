@@ -31,7 +31,7 @@ import {
   NavrightTenth,
   NavrightThi,
 } from "./NavTech.elements";
-import Logo from "../../assets/12english-logo.png";
+import Logo from "../../assets/main-english-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { faShield } from "@fortawesome/free-solid-svg-icons";

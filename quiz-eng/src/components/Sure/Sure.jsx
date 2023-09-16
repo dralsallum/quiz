@@ -1,5 +1,5 @@
 import React from "react";
-
+import questions from "../../utils/TestQ.json";
 import {
   SureButton,
   SureButtonContainer,
@@ -9,13 +9,13 @@ import {
   SureWrapper,
 } from "./Sure.elements";
 
-const Sure = () => {
+const Sure = ({ handleSureButtonClick, setSelectedAnswer, selectedAnswer }) => {
   return (
     <SureWrapper>
       <SureContainer>
         <SureSubContainer>
           <SureButtonContainer>
-            <SureButton>
+            <SureButton onClick={() => handleSureButtonClick()}>
               <SureButtonSpan>تحقق</SureButtonSpan>
             </SureButton>
           </SureButtonContainer>

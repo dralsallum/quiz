@@ -5,12 +5,13 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
   direction: rtl;
-  margin: 1rem 2rem 1.5rem 1.5rem;
+  margin: 2rem 2rem 1.5rem 1.5rem;
   flex-wrap: wrap;
   gap: 4rem;
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 900px) {
     gap: 1rem;
+    margin: 1rem 2rem 1.5rem 1.5rem;
   }
 `;
 export const HeaderContainer = styled.div`
@@ -25,7 +26,7 @@ export const HeaderContainer = styled.div`
   }
 `;
 export const HeaderPara = styled.h3`
-  color: #2946b6;
+  color: #ffffff;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 
@@ -35,7 +36,7 @@ export const HeaderPara = styled.h3`
 `;
 export const HeaderList = styled.ul`
   font-size: 1.2rem;
-  color: #848484;
+  color: #ffffff;
   list-style-type: none;
   padding: 0;
   text-align: right;
@@ -51,8 +52,9 @@ export const HeaderElements = styled.li`
   flex-wrap: nowrap;
 `;
 export const HeaderButton = styled.button`
-  background-color: #2946b6;
-  color: #fff;
+  background-color: #40f1a8;
+  color: #000000;
+  font-weight: 500;
   padding: 1rem;
   border: none;
   border-radius: 12px;

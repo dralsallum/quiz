@@ -5,13 +5,12 @@ import { FaShoppingBasket } from "react-icons/fa";
 
 export const Nav = styled.nav`
   color: Black;
-  background-color: #ffffff;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 999;
 `;
@@ -39,7 +38,7 @@ export const NavLogo = styled.div`
   font-size: 2rem;
   display: flex;
   align-items: center;
-  padding-top: 1.4rem;
+  padding-top: 0.6rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -127,6 +126,7 @@ export const NavBtnBaskets = styled(FaShoppingBasket)`
 
 export const NavBtnBasketsSpan = styled.span`
   font-size: 1.4rem;
+  color: #ffffff;
 
   &.animate {
     animation: pop 300ms ease-in-out;
@@ -158,9 +158,25 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const ButtonMain = styled(Button)`
+export const ButtonMain = styled.button`
+  background: #ffffff;
+  color: #2168ed;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    background: lightgray;
+  }
+
   @media screen and (max-width: 960px) {
-    padding: 0.5rem;
-    font-size: 0.8rem;
+    width: 100%;
+    padding: 8px 8px;
   }
 `;

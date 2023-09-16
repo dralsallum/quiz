@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { Learn } from "../components";
+import { Project } from "../components";
 
 const Test = () => {
   return (
     <>
-      <Learn />
+      <Project />
     </>
   );
 };

@@ -62,6 +62,7 @@ export const LearnNavProgressBottom = styled.div`
   height: 16px;
   width: ${({ progress }) => `${progress}%`};
   border-radius: 8px;
+  transition: width 0.5s ease; // This line is added for animation
 `;
 export const LearnNavProgressSubBottom = styled.div`
   position: absolute;

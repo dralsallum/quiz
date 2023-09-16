@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import {
   QuestionBanner,
   QuestionBannerArrowContain,
@@ -53,11 +52,7 @@ import {
   QuestionTitleContainer,
   QuestionWrapper,
 } from "./Question.elements";
-import Monaliza from "../../assets/welcomeimage1661254149_256.jpg";
-import David from "../../assets/davidcover1661254508_256.jpg";
-import Sogreat from "../../assets/sogreat1661259325_256.jpg";
-import Europ from "../../assets/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg";
-import Emd from "../../assets/Diamond.png";
+import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
 
 const Arrow = () => (
@@ -65,6 +60,94 @@ const Arrow = () => (
     <path d="M12 16l4-4h-8z" />
   </svg>
 );
+
+const ChapterItem = ({ imgSrc, mainText, subText, type, completed }) => {
+  return (
+    <QuestionChapterItemContainer>
+      <Link
+        to="/test"
+        style={{
+          textDecoration: "none",
+          color: "inherit",
+        }}
+      >
+        <QuestionChapterItemElement>
+          <QuestionChapterItemPart>
+            <QuestionChapterPictureContainer>
+              <QuestionChapterPictureChildContainer>
+                <QuestionChapterPictureSvg>
+                  <QuestionChapterPictureDefs>
+                    <QuestionChapterPictureLine>
+                      <QuestionChapterPictureStop></QuestionChapterPictureStop>
+                    </QuestionChapterPictureLine>
+                  </QuestionChapterPictureDefs>
+                  <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
+                  <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
+                </QuestionChapterPictureSvg>
+              </QuestionChapterPictureChildContainer>
+            </QuestionChapterPictureContainer>
+            <QuestionChapterPictureSection completed={completed}>
+              <QuestionChapterPicture
+                src={imgSrc}
+                alt=""
+                completed={completed}
+              />
+            </QuestionChapterPictureSection>
+            <QuestionChapterPictureMain></QuestionChapterPictureMain>
+          </QuestionChapterItemPart>
+          <QuestionChapterItemSpan>
+            <QuestionChapterItemPara>{mainText}</QuestionChapterItemPara>
+            <QuestionChapterItemSubPara>{subText}</QuestionChapterItemSubPara>
+          </QuestionChapterItemSpan>
+          {type !== "checkpoint" && ( // <-- Check if it's not a checkpoint
+            <QuestionChapterPointContainer>
+              <QuestionChapterPoint></QuestionChapterPoint>
+            </QuestionChapterPointContainer>
+          )}
+        </QuestionChapterItemElement>
+      </Link>
+    </QuestionChapterItemContainer>
+  );
+};
+
+// A simplified version of your Chapter
+const Chapter = ({
+  chapterNumber,
+  lessonsCompleted,
+  totalLessons,
+  chapterItems,
+}) => {
+  const progressWidth = `${(lessonsCompleted / totalLessons) * 100}%`;
+  return (
+    <QuestionChapterOneContainer>
+      <QuestionChapterOneHeaderContainer>
+        <QuestionChapterOneHeader>
+          Chapter {chapterNumber}
+        </QuestionChapterOneHeader>
+        <QuestionChapterOnePara>
+          Lessons completed {lessonsCompleted}/{totalLessons}
+        </QuestionChapterOnePara>
+        <QuestionChapterProgressContainer>
+          <QuestionChapterProgress style={{ width: progressWidth }}>
+            <QuestionChapterProgressSpan>
+              {progressWidth}
+            </QuestionChapterProgressSpan>
+          </QuestionChapterProgress>
+        </QuestionChapterProgressContainer>
+      </QuestionChapterOneHeaderContainer>
+      {chapterItems.map((item, index) => (
+        <ChapterItem
+          key={index}
+          completed={item.completed}
+          type={item.type} // <-- Pass the type
+          imgSrc={item.imgSrc}
+          mainText={item.mainText}
+          subText={item.subText}
+        />
+      ))}
+    </QuestionChapterOneContainer>
+  );
+};
 
 const Question = () => {
   const [quizCompletedCount, setQuizCompletedCount] = useState(0);
@@ -138,555 +221,31 @@ const Question = () => {
                     </QuestionTimeKey>
                   </QuestionTimeKeyContainer>
                 </QuestionTimeBoost>
+                <Chapter
+                  chapterNumber={1}
+                  lessonsCompleted={2}
+                  totalLessons={5}
+                  chapterItems={chapterItems}
+                />
+                <Chapter
+                  chapterNumber={1}
+                  lessonsCompleted={1}
+                  totalLessons={5}
+                  chapterItems={chapterItems}
+                />
+                <Chapter
+                  chapterNumber={1}
+                  lessonsCompleted={1}
+                  totalLessons={5}
+                  chapterItems={chapterItems}
+                />
+                <Chapter
+                  chapterNumber={1}
+                  lessonsCompleted={1}
+                  totalLessons={5}
+                  chapterItems={chapterItems}
+                />
               </QuestionTimeBoostContainer>
-              <QuestionChapterOneContainer>
-                <QuestionChapterOneHeaderContainer>
-                  <QuestionChapterOneHeader>Chapter 1</QuestionChapterOneHeader>
-                  <QuestionChapterOnePara>
-                    Lessons completed 1/4
-                  </QuestionChapterOnePara>
-                  <QuestionChapterProgressContainer>
-                    <QuestionChapterProgress style={{ width: progressWidth }}>
-                      <QuestionChapterProgressSpan>
-                        {progressWidth}
-                      </QuestionChapterProgressSpan>
-                    </QuestionChapterProgress>
-                  </QuestionChapterProgressContainer>
-                </QuestionChapterOneHeaderContainer>
-                <QuestionChapterItemContainer>
-                  <Link
-                    to="/test"
-                    style={{
-                      textDecoration: "none",
-                      color: "inherit",
-                    }}
-                  >
-                    <QuestionChapterItemElement>
-                      <QuestionChapterItemPart>
-                        <QuestionChapterPictureContainer>
-                          <QuestionChapterPictureChildContainer>
-                            <QuestionChapterPictureSvg>
-                              <QuestionChapterPictureDefs>
-                                <QuestionChapterPictureLine>
-                                  <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                                </QuestionChapterPictureLine>
-                              </QuestionChapterPictureDefs>
-                              <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                              <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            </QuestionChapterPictureSvg>
-                          </QuestionChapterPictureChildContainer>
-                        </QuestionChapterPictureContainer>
-                        <QuestionChapterPictureSection>
-                          <QuestionChapterPicture src={Monaliza} alt="" />
-                        </QuestionChapterPictureSection>
-                        <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                      </QuestionChapterItemPart>
-                      <QuestionChapterItemSpan>
-                        <QuestionChapterItemPara>Hello</QuestionChapterItemPara>
-                        <QuestionChapterItemSubPara>
-                          Learn greetings for meeting people
-                        </QuestionChapterItemSubPara>
-                      </QuestionChapterItemSpan>
-                      <QuestionChapterPointContainer>
-                        <QuestionChapterPoint></QuestionChapterPoint>
-                      </QuestionChapterPointContainer>
-                    </QuestionChapterItemElement>
-                  </Link>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={David} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Introducing yourself
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Say your name
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Sogreat} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Saying how you are
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Talk about how you feel
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Europ} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Developing fluency
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Introduce yourself
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Emd} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Checkpoint
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Test your skills to access the next chapter
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-              </QuestionChapterOneContainer>
-              <QuestionChapterOneContainer>
-                <QuestionChapterOneHeaderContainer>
-                  <QuestionChapterOneHeader>Chapter 2</QuestionChapterOneHeader>
-                  <QuestionChapterOnePara>
-                    Lessons completed 1/4
-                  </QuestionChapterOnePara>
-                  <QuestionChapterProgressContainer>
-                    <QuestionChapterProgress style={{ width: progressWidth }}>
-                      <QuestionChapterProgressSpan>
-                        {progressWidth}
-                      </QuestionChapterProgressSpan>
-                    </QuestionChapterProgress>
-                  </QuestionChapterProgressContainer>
-                </QuestionChapterOneHeaderContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Monaliza} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>Hello</QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Learn greetings for meeting people
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={David} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Introducing yourself
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Say your name
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Sogreat} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Saying how you are
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Talk about how you feel
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Europ} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Developing fluency
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Introduce yourself
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Emd} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Checkpoint
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Test your skills to access the next chapter
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-              </QuestionChapterOneContainer>
-              <QuestionChapterOneContainer>
-                <QuestionChapterOneHeaderContainer>
-                  <QuestionChapterOneHeader>Chapter 3</QuestionChapterOneHeader>
-                  <QuestionChapterOnePara>
-                    Lessons completed 1/4
-                  </QuestionChapterOnePara>
-                  <QuestionChapterProgressContainer>
-                    <QuestionChapterProgress style={{ width: progressWidth }}>
-                      <QuestionChapterProgressSpan>
-                        {progressWidth}
-                      </QuestionChapterProgressSpan>
-                    </QuestionChapterProgress>
-                  </QuestionChapterProgressContainer>
-                </QuestionChapterOneHeaderContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Monaliza} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>Hello</QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Learn greetings for meeting people
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={David} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Introducing yourself
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Say your name
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Sogreat} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Saying how you are
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Talk about how you feel
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Europ} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Developing fluency
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Introduce yourself
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                    <QuestionChapterPointContainer>
-                      <QuestionChapterPoint></QuestionChapterPoint>
-                    </QuestionChapterPointContainer>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-                <QuestionChapterItemContainer>
-                  <QuestionChapterItemElement>
-                    <QuestionChapterItemPart>
-                      <QuestionChapterPictureContainer>
-                        <QuestionChapterPictureChildContainer>
-                          <QuestionChapterPictureSvg>
-                            <QuestionChapterPictureDefs>
-                              <QuestionChapterPictureLine>
-                                <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                              </QuestionChapterPictureLine>
-                            </QuestionChapterPictureDefs>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                            <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                          </QuestionChapterPictureSvg>
-                        </QuestionChapterPictureChildContainer>
-                      </QuestionChapterPictureContainer>
-                      <QuestionChapterPictureSection>
-                        <QuestionChapterPicture src={Emd} alt="" />
-                      </QuestionChapterPictureSection>
-                      <QuestionChapterPictureMain></QuestionChapterPictureMain>
-                    </QuestionChapterItemPart>
-                    <QuestionChapterItemSpan>
-                      <QuestionChapterItemPara>
-                        Checkpoint
-                      </QuestionChapterItemPara>
-                      <QuestionChapterItemSubPara>
-                        Test your skills to access the next chapter
-                      </QuestionChapterItemSubPara>
-                    </QuestionChapterItemSpan>
-                  </QuestionChapterItemElement>
-                </QuestionChapterItemContainer>
-              </QuestionChapterOneContainer>
             </QuestionTimeline>
           </QuestionSubContainer>
         </QuestionContainer>
