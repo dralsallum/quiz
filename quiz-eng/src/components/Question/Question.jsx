@@ -54,70 +54,79 @@ import {
 } from "./Question.elements";
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
+import { useLesson } from "../../LessonContext";
 
 const Arrow = () => (
   <svg width="18" height="18" viewBox="0 0 24 24">
     <path d="M12 16l4-4h-8z" />
   </svg>
 );
+const ChapterItem = ({
+  imgSrc,
+  mainText,
+  subText,
+  type,
+  completed,
+  url,
+  isAccessible,
+}) => {
+  const containerStyle = isAccessible ? { opacity: 1 } : { opacity: 0.5 };
 
-const ChapterItem = ({ imgSrc, mainText, subText, type, completed }) => {
+  const content = (
+    <QuestionChapterItemElement>
+      <QuestionChapterItemPart>
+        <QuestionChapterPictureContainer>
+          <QuestionChapterPictureChildContainer>
+            <QuestionChapterPictureSvg>
+              <QuestionChapterPictureDefs>
+                <QuestionChapterPictureLine>
+                  <QuestionChapterPictureStop></QuestionChapterPictureStop>
+                </QuestionChapterPictureLine>
+              </QuestionChapterPictureDefs>
+              <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
+              <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
+            </QuestionChapterPictureSvg>
+          </QuestionChapterPictureChildContainer>
+        </QuestionChapterPictureContainer>
+        <QuestionChapterPictureSection completed={completed}>
+          <QuestionChapterPicture src={imgSrc} alt="" completed={completed} />
+        </QuestionChapterPictureSection>
+        <QuestionChapterPictureMain></QuestionChapterPictureMain>
+      </QuestionChapterItemPart>
+      <QuestionChapterItemSpan>
+        <QuestionChapterItemPara>{mainText}</QuestionChapterItemPara>
+        <QuestionChapterItemSubPara>{subText}</QuestionChapterItemSubPara>
+      </QuestionChapterItemSpan>
+      {type !== "checkpoint" && ( // <-- Check if it's not a checkpoint
+        <QuestionChapterPointContainer>
+          <QuestionChapterPoint></QuestionChapterPoint>
+        </QuestionChapterPointContainer>
+      )}
+    </QuestionChapterItemElement>
+  );
+
   return (
-    <QuestionChapterItemContainer>
-      <Link
-        to="/test"
-        style={{
-          textDecoration: "none",
-          color: "inherit",
-        }}
-      >
-        <QuestionChapterItemElement>
-          <QuestionChapterItemPart>
-            <QuestionChapterPictureContainer>
-              <QuestionChapterPictureChildContainer>
-                <QuestionChapterPictureSvg>
-                  <QuestionChapterPictureDefs>
-                    <QuestionChapterPictureLine>
-                      <QuestionChapterPictureStop></QuestionChapterPictureStop>
-                    </QuestionChapterPictureLine>
-                  </QuestionChapterPictureDefs>
-                  <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                  <QuestionChapterPictureCircle></QuestionChapterPictureCircle>
-                </QuestionChapterPictureSvg>
-              </QuestionChapterPictureChildContainer>
-            </QuestionChapterPictureContainer>
-            <QuestionChapterPictureSection completed={completed}>
-              <QuestionChapterPicture
-                src={imgSrc}
-                alt=""
-                completed={completed}
-              />
-            </QuestionChapterPictureSection>
-            <QuestionChapterPictureMain></QuestionChapterPictureMain>
-          </QuestionChapterItemPart>
-          <QuestionChapterItemSpan>
-            <QuestionChapterItemPara>{mainText}</QuestionChapterItemPara>
-            <QuestionChapterItemSubPara>{subText}</QuestionChapterItemSubPara>
-          </QuestionChapterItemSpan>
-          {type !== "checkpoint" && ( // <-- Check if it's not a checkpoint
-            <QuestionChapterPointContainer>
-              <QuestionChapterPoint></QuestionChapterPoint>
-            </QuestionChapterPointContainer>
-          )}
-        </QuestionChapterItemElement>
-      </Link>
+    <QuestionChapterItemContainer style={containerStyle}>
+      {isAccessible ? (
+        <Link to={url} style={{ textDecoration: "none", color: "inherit" }}>
+          {content}
+        </Link>
+      ) : (
+        content
+      )}
     </QuestionChapterItemContainer>
   );
 };
 
 // A simplified version of your Chapter
-const Chapter = ({
-  chapterNumber,
-  lessonsCompleted,
-  totalLessons,
-  chapterItems,
-}) => {
-  const progressWidth = `${(lessonsCompleted / totalLessons) * 100}%`;
+const Chapter = ({ chapterNumber, totalLessons, chapterItems }) => {
+  const { lessonsCompleted } = useLesson();
+  const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
+  const completedLessonsCount = lessonsForThisChapter.filter(
+    (lesson) => lesson === true
+  ).length;
+  const progressWidth = `${(completedLessonsCount / totalLessons) * 100}%`;
+
   return (
     <QuestionChapterOneContainer>
       <QuestionChapterOneHeaderContainer>
@@ -125,7 +134,7 @@ const Chapter = ({
           Chapter {chapterNumber}
         </QuestionChapterOneHeader>
         <QuestionChapterOnePara>
-          Lessons completed {lessonsCompleted}/{totalLessons}
+          Lessons completed {completedLessonsCount}/{totalLessons}
         </QuestionChapterOnePara>
         <QuestionChapterProgressContainer>
           <QuestionChapterProgress style={{ width: progressWidth }}>
@@ -135,16 +144,21 @@ const Chapter = ({
           </QuestionChapterProgress>
         </QuestionChapterProgressContainer>
       </QuestionChapterOneHeaderContainer>
-      {chapterItems.map((item, index) => (
-        <ChapterItem
-          key={index}
-          completed={item.completed}
-          type={item.type} // <-- Pass the type
-          imgSrc={item.imgSrc}
-          mainText={item.mainText}
-          subText={item.subText}
-        />
-      ))}
+      {chapterItems.map((item, index) => {
+        const isAccessible = lessonsForThisChapter[index];
+        return (
+          <ChapterItem
+            key={index}
+            isAccessible={isAccessible}
+            completed={item.completed}
+            type={item.type} // <-- Pass the type
+            imgSrc={item.imgSrc}
+            mainText={item.mainText}
+            subText={item.subText}
+            url={item.url}
+          />
+        );
+      })}
     </QuestionChapterOneContainer>
   );
 };
@@ -153,16 +167,12 @@ const Question = () => {
   const [quizCompletedCount, setQuizCompletedCount] = useState(0);
   const [progressWidth, setProgressWidth] = useState("0%");
 
-  useEffect(() => {
-    const newWidth = `${(quizCompletedCount / 4) * 100}%`;
-    setProgressWidth(newWidth);
-  }, [quizCompletedCount]);
+  const [lessonsCompleted, setLessonsCompleted] = useState({
+    1: [true, false, false, false, false], // for chapter 1
+    2: [false, false, false], // for chapter 2
+    // add more chapters as needed
+  });
 
-  const completeQuiz = () => {
-    if (quizCompletedCount < 4) {
-      setQuizCompletedCount(quizCompletedCount + 1);
-    }
-  };
   return (
     <QuestionMain>
       <QuestionWrapper>
@@ -223,24 +233,24 @@ const Question = () => {
                 </QuestionTimeBoost>
                 <Chapter
                   chapterNumber={1}
-                  lessonsCompleted={2}
-                  totalLessons={5}
-                  chapterItems={chapterItems}
-                />
-                <Chapter
-                  chapterNumber={1}
                   lessonsCompleted={1}
                   totalLessons={5}
                   chapterItems={chapterItems}
                 />
                 <Chapter
-                  chapterNumber={1}
+                  chapterNumber={2}
                   lessonsCompleted={1}
                   totalLessons={5}
                   chapterItems={chapterItems}
                 />
                 <Chapter
-                  chapterNumber={1}
+                  chapterNumber={3}
+                  lessonsCompleted={1}
+                  totalLessons={5}
+                  chapterItems={chapterItems}
+                />
+                <Chapter
+                  chapterNumber={4}
                   lessonsCompleted={1}
                   totalLessons={5}
                   chapterItems={chapterItems}

@@ -37,6 +37,7 @@ import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { faShield } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const NavTech = () => {
   return (
@@ -47,7 +48,9 @@ const NavTech = () => {
             <NavContanierLogoMain>
               <NavContanierLogoMainSpan>
                 <NavContanierLogoMainSvg>
-                  <NavContanierLogoMainimg src={Logo} alt="" />
+                  <Link to="/">
+                    <NavContanierLogoMainimg src={Logo} alt="" />
+                  </Link>
                 </NavContanierLogoMainSvg>
               </NavContanierLogoMainSpan>
             </NavContanierLogoMain>

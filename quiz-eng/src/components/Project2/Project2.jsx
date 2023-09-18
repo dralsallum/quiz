@@ -81,7 +81,7 @@ import {
   TNavProgressWrapper,
   TWrapperTop,
 } from "./Project.elements";
-import questions from "../../utils/TestQ.json";
+import questions from "../../utils/chapter1.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 import Dude from "../../assets/dude.png";
@@ -280,7 +280,7 @@ const Project = () => {
         // Otherwise, the quiz is done.
         setShowScore(true);
         setProgress(100);
-        const percentage = Math.round((score / questions.length) * 100);
+        const percentage = Math.round((score / 10) * 100); // Since the score is out of 10
         setScorePercentage(percentage);
       }
     }, 500);

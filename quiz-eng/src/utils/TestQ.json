@@ -1,41 +1,15 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "The woman eats",
-    "questionType": "type4",
-    "correctSequence": [3, 1],
-    "answerOptions": [
-      { "answerText": "الولد" },
-      { "answerText": "تاكل" },
-      { "answerText": "مياه" },
-      { "answerText": "المراة" },
-      { "answerText": "الماء" },
-      { "answerText": "ياكل" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "انا ذهبت للمدرسة",
-    "correctSequence": [2, 0, 3, 1],
-    "questionType": "type4",
-    "answerOptions": [
-      { "answerText": "went" },
-      { "answerText": "school" },
-      { "answerText": "I" },
-      { "answerText": "to" },
-      { "answerText": "by" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "water",
+    "correctSequence": [1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل", "isCorrect": false },
-      { "answerText": "ماء", "isCorrect": true },
-      { "answerText": "بنت", "isCorrect": false },
-      { "answerText": "مفتاح", "isCorrect": false },
-      { "answerText": "شجرة", "isCorrect": false }
+      { "answerText": "رجل" },
+      { "answerText": "ماء" },
+      { "answerText": "بنت" },
+      { "answerText": "مفتاح" },
+      { "answerText": "شجرة" }
     ]
   },
   {
@@ -60,33 +34,41 @@
     ]
   },
   {
-    "questionText": "اختار الكلمة الصحيحة:",
-    "questionSubText": "pen",
-    "questionType": "type1",
+    "questionText": "اي واحدة من هذه بنت",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "خيار", "isCorrect": false },
-      { "answerText": "قلم", "isCorrect": true },
-      { "answerText": "خبز", "isCorrect": false },
-      { "answerText": "مسمار", "isCorrect": false },
-      { "answerText": "مسطرة", "isCorrect": false }
+      {
+        "answerText": "girl",
+        "isCorrect": true,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/a443582c1eb03f3fcebfff4febdba3e4"
+      },
+      {
+        "answerText": "man",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+      },
+      {
+        "answerText": "boy",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
+      }
     ]
   },
-
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "fire",
+    "questionSubText": "Girl",
+    "correctSequence": [2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "نار", "isCorrect": true },
-      { "answerText": "مغسلة", "isCorrect": false },
-      { "answerText": "شراب", "isCorrect": false },
-      { "answerText": "قارورة", "isCorrect": false },
-      { "answerText": "مصباح", "isCorrect": false }
+      { "answerText": "رجل" },
+      { "answerText": "ماء" },
+      { "answerText": "فتاة" },
+      { "answerText": "مفتاح" },
+      { "answerText": "شجرة" }
     ]
   },
   {
     "questionText": "اي واحد من هؤلاء هو الرجل",
-    "questionSubText": "girl",
     "questionType": "type2",
     "answerOptions": [
       {
@@ -96,14 +78,54 @@
       },
       {
         "answerText": "Man",
-        "isCorrect": false,
+        "isCorrect": true,
         "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
       },
       {
         "answerText": "girl",
-        "isCorrect": true,
+        "isCorrect": false,
         "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
       }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "The woman eats",
+    "questionType": "type1",
+    "correctSequence": [3, 1],
+    "answerOptions": [
+      { "answerText": "الولد" },
+      { "answerText": "تاكل" },
+      { "answerText": "مياه" },
+      { "answerText": "المراة" },
+      { "answerText": "الماء" },
+      { "answerText": "ياكل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "انا ذهبت للمدرسة",
+    "correctSequence": [2, 0, 3, 1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "went" },
+      { "answerText": "school" },
+      { "answerText": "I" },
+      { "answerText": "to" },
+      { "answerText": "by" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Tree",
+    "correctSequence": [4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "رجل" },
+      { "answerText": "ماء" },
+      { "answerText": "بنت" },
+      { "answerText": "مفتاح" },
+      { "answerText": "شجرة" }
     ]
   },
   {
@@ -129,60 +151,15 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "bottle",
+    "questionSubText": "Boy",
+    "correctSequence": [3],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "نار", "isCorrect": false },
-      { "answerText": "مغسلة", "isCorrect": false },
-      { "answerText": "شراب", "isCorrect": false },
-      { "answerText": "قارورة", "isCorrect": true },
-      { "answerText": "مصباح", "isCorrect": false }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "lamp",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "خيار", "isCorrect": false },
-      { "answerText": "قلم", "isCorrect": false },
-      { "answerText": "خبز", "isCorrect": false },
-      { "answerText": "مسمار", "isCorrect": false },
-      { "answerText": "مصباح", "isCorrect": true }
-    ]
-  },
-
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "sock",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "نار", "isCorrect": false },
-      { "answerText": "مغسلة", "isCorrect": false },
-      { "answerText": "شراب", "isCorrect": true },
-      { "answerText": "قارورة", "isCorrect": false },
-      { "answerText": "مصباح", "isCorrect": false }
-    ]
-  },
-  {
-    "questionText": "أي واحدة من هذه هو تفاحة",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "Bread",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/c61a359a01c01fc19bbe6a21592db53b"
-      },
-      {
-        "answerText": "Apple",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/cd1ecb710774af3d4904673137972ef3"
-      },
-      {
-        "answerText": "Water",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/7afea32bcf0e8c6f9d446ad4aad416be"
-      }
+      { "answerText": "رجل" },
+      { "answerText": "ماء" },
+      { "answerText": "بنت" },
+      { "answerText": "ولد" },
+      { "answerText": "طاولة" }
     ]
   }
 ]

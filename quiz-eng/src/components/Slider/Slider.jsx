@@ -69,7 +69,10 @@ const Slider = () => {
   const slides = data.map((card, i) => (
     <SwiperSlide key={i}>
       <Link
-        style={{ textDecoration: "none", color: "inherit" }}
+        style={{
+          textDecoration: "none",
+          color: "inherit",
+        }}
         to={`/product/${encodeURIComponent(card.name)}`}
       >
         <SliderCardContainer>

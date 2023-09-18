@@ -5,7 +5,6 @@ export const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
   padding: 1rem 0;
   padding-right: 1.5rem;
   padding-left: 1.5rem;

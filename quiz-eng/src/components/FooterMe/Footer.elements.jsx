@@ -4,12 +4,11 @@ import { FaMagento, FaYoutube } from "react-icons/fa";
 
 export const FooterContainer = styled.div`
   background-color: #101522;
-  padding: 2rem 0 2rem 0;
+  padding: 3rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
   direction: rtl;
 `;
 

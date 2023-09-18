@@ -8,6 +8,8 @@ import {
   Who,
   Footer,
   FooterMe,
+  Article,
+  Divider,
 } from "../components";
 import { analytics } from "../firebase";
 import { logEvent } from "firebase/analytics";
@@ -29,8 +31,11 @@ const Landing = () => {
         <Header />
       </GradientWrapper>
       <Slider />
+      <Article />
+      <Divider />
+      <Article />
       <About />
-      <Who />
+
       <FooterMe />
     </>
   );

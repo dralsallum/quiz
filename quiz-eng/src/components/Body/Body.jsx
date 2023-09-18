@@ -21,7 +21,7 @@ import {
   ScoreSectionbackground,
   ScoreSectionProgress,
 } from "./Body.elements";
-import questions from "../../utils/QuizQ.json";
+import questions from "../../utils/chapter2.json";
 import lowScoreSVG from "../../assets/level-0.svg";
 import mediumScoreSVG from "../../assets/level-2.svg";
 import highScoreSVG from "../../assets/level-4.svg";

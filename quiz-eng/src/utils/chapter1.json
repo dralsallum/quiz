@@ -1,0 +1,136 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "A boy and a girl",
+    "questionType": "type1",
+    "correctSequence": [3, 5, 0],
+    "answerOptions": [
+      { "answerText": "بنت" },
+      { "answerText": "امراة" },
+      { "answerText": "برتقال" },
+      { "answerText": "ولد" },
+      { "answerText": "هو" },
+      { "answerText": "و" }
+    ]
+  },
+  {
+    "questionText": "اختر الكلمة الناقصة:",
+    "questionSubText": "I ____ an apple",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "eating" },
+      { "answerText": "eat" },
+      { "answerText": "eats" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "I am a man",
+    "correctSequence": [3, 0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "رجل" },
+      { "answerText": "ولد" },
+      { "answerText": "امراة" },
+      { "answerText": "انا" },
+      { "answerText": "سقف" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "She is a woman",
+    "correctSequence": [0, 2],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "هي" },
+      { "answerText": "ولد" },
+      { "answerText": "امراة" },
+      { "answerText": "انا" },
+      { "answerText": "رجل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "i am  ______  girl.",
+    "correctSequence": [1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "-" },
+      { "answerText": "a" },
+      { "answerText": "an" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "she",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "هذا" },
+      { "answerText": "هو" },
+      { "answerText": "هم" },
+      { "answerText": "هي" },
+      { "answerText": "هؤلاء" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Eat an orange",
+    "correctSequence": [5, 2],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "واكل" },
+      { "answerText": "وانا" },
+      { "answerText": "برتقال" },
+      { "answerText": "انا" },
+      { "answerText": "غلام" },
+      { "answerText": "كٌل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Ahmed and I eat",
+    "correctSequence": [1, 4, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "رجل" },
+      { "answerText": "احمد" },
+      { "answerText": "وبنت" },
+      { "answerText": "ناكل" },
+      { "answerText": "وانا" },
+      { "answerText": "ماء" },
+      { "answerText": "كل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Eat!",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "هي" },
+      { "answerText": "ناكل" },
+      { "answerText": "هي" },
+      { "answerText": "كٌلْ" },
+      { "answerText": "تفاحة" }
+    ]
+  },
+  {
+    "questionText": "اختر الكلمة الناقصة:",
+    "questionSubText": "انا ولد وسعد ياكل تفاحة",
+    "correctSequence": [2, 4, 1, 5, 6, 3, 8, 7, 0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "apple" },
+      { "answerText": "a" },
+      { "answerText": "I" },
+      { "answerText": "Sad" },
+      { "answerText": "am" },
+      { "answerText": "boy" },
+      { "answerText": "and" },
+      { "answerText": "an" },
+      { "answerText": "eats" }
+    ]
+  }
+]
