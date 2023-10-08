@@ -1,5 +1,4 @@
 import React from "react";
-import questions from "../../utils/TestQ.json";
 import {
   SureButton,
   SureButtonContainer,

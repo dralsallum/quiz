@@ -1,7 +1,12 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
+import {
+  getAuth,
+  setPersistence,
+  browserLocalPersistence,
+} from "firebase/auth";
+import { getDatabase, ref, set, onValue } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDpPFyI7gNwO1t_6m9-VGgeHjS6jArHoNE",
@@ -14,8 +19,20 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
+const db = getFirestore(app);
 
-export { db, analytics, auth };
+const database = getDatabase(app);
+
+export {
+  db,
+  analytics,
+  auth,
+  database,
+  ref,
+  set,
+  onValue,
+  setPersistence, // <-- Export it
+  browserLocalPersistence, // <-- Export it
+};

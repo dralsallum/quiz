@@ -1,125 +1,136 @@
 [
   {
-    "questionText": "When Anne was a young girl, she _______ spend hours every day reading books in her room:",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "A boy and a girl",
+    "questionType": "type1",
+    "correctSequence": [3, 5, 0],
     "answerOptions": [
-      { "answerText": "used", "isCorrect": false },
-      { "answerText": "would", "isCorrect": true },
-      { "answerText": "was", "isCorrect": false },
-      { "answerText": "should", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "بنت" },
+      { "answerText": "امراة" },
+      { "answerText": "برتقال" },
+      { "answerText": "ولد" },
+      { "answerText": "هو" },
+      { "answerText": "و" }
     ]
   },
   {
-    "questionText": "The argument raised by Lucy seems to be a critical _______ in our community today.",
+    "questionText": "اختر الكلمة الناقصة:",
+    "questionSubText": "I ____ an apple",
+    "correctSequence": [1],
+    "questionType": "type3",
     "answerOptions": [
-      { "answerText": "subject", "isCorrect": false },
-      { "answerText": "theme", "isCorrect": false },
-      { "answerText": "issue", "isCorrect": true },
-      { "answerText": "point", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "eating" },
+      { "answerText": "eat" },
+      { "answerText": "eats" }
     ]
   },
   {
-    "questionText": "Where did the man spend his vacation?",
-    "audioUrl": "https://myenglevel.s3.me-south-1.amazonaws.com/dalilk-intermediate_02.mp3",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "I am a man",
+    "correctSequence": [3, 0],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "in a hotel", "isCorrect": false },
-      { "answerText": "with friends", "isCorrect": false },
-      { "answerText": "at campsite", "isCorrect": true },
-      { "answerText": "in a cottage", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "رجل" },
+      { "answerText": "ولد" },
+      { "answerText": "امراة" },
+      { "answerText": "انا" },
+      { "answerText": "سقف" }
     ]
   },
   {
-    "questionText": "Regrettably, our rented apartment was a(n) _______ distance away from the city center.",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "She is a woman",
+    "correctSequence": [0, 2],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "sizeable", "isCorrect": false },
-      { "answerText": "extensive", "isCorrect": false },
-      { "answerText": "considerable", "isCorrect": true },
-      { "answerText": "substantial", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "هي" },
+      { "answerText": "ولد" },
+      { "answerText": "امراة" },
+      { "answerText": "انا" },
+      { "answerText": "رجل" }
     ]
   },
   {
-    "questionText": "Susan has insisted _______ buying gifts for everyone.",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "i am  ______  girl.",
+    "correctSequence": [1],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "in", "isCorrect": false },
-      { "answerText": "for", "isCorrect": false },
-      { "answerText": "to", "isCorrect": false },
-      { "answerText": "on", "isCorrect": true },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "-" },
+      { "answerText": "a" },
+      { "answerText": "an" }
     ]
   },
   {
-    "questionText": "The young musician's talent is starting to gain _______ around the world.",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "she",
+    "correctSequence": [3],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "knowledge", "isCorrect": false },
-      { "answerText": "understanding", "isCorrect": false },
-      { "answerText": "familiarity", "isCorrect": false },
-      { "answerText": "recognition", "isCorrect": true },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "هذا" },
+      { "answerText": "هو" },
+      { "answerText": "هم" },
+      { "answerText": "هي" },
+      { "answerText": "هؤلاء" }
     ]
   },
   {
-    "questionText": "This fish is perfectly _______ - what seasoning did you use?",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Eat an orange",
+    "correctSequence": [5, 2],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "tender", "isCorrect": true },
-      { "answerText": "mild", "isCorrect": false },
-      { "answerText": "soft", "isCorrect": false },
-      { "answerText": "gentle", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "واكل" },
+      { "answerText": "وانا" },
+      { "answerText": "برتقال" },
+      { "answerText": "انا" },
+      { "answerText": "غلام" },
+      { "answerText": "كٌل" }
     ]
   },
   {
-    "questionText": "What type of seminar is being arranged?",
-    "audioUrl": "https://myenglevel.s3.me-south-1.amazonaws.com/dalilk-intermediate_12.mp3",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Ahmed and I eat",
+    "correctSequence": [1, 4, 3],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "a science and technology seminar", "isCorrect": false },
-      { "answerText": "a historical seminar", "isCorrect": true },
-      { "answerText": "a television broadcast", "isCorrect": false },
-      { "answerText": "a musical seminar", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "رجل" },
+      { "answerText": "احمد" },
+      { "answerText": "وبنت" },
+      { "answerText": "ناكل" },
+      { "answerText": "وانا" },
+      { "answerText": "ماء" },
+      { "answerText": "كل" }
     ]
   },
   {
-    "questionText": "Liam's parents _______ and hence, they would be thrilled to attend the art exhibition.",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Eat!",
+    "correctSequence": [3],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "very much like Monet's paintings", "isCorrect": true },
-      { "answerText": "like Monet's paintings very much", "isCorrect": false },
-      { "answerText": "like much Monet's paintings", "isCorrect": false },
-      { "answerText": "much like Monet's paintings", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "هي" },
+      { "answerText": "ناكل" },
+      { "answerText": "هي" },
+      { "answerText": "كٌلْ" },
+      { "answerText": "تفاحة" }
     ]
   },
   {
-    "questionText": "Did you face any difficulties _______ our office?",
+    "questionText": "اختر الكلمة الناقصة:",
+    "questionSubText": "انا ولد وسعد ياكل تفاحة",
+    "correctSequence": [2, 4, 1, 5, 6, 3, 8, 7, 0],
+    "questionType": "type3",
     "answerOptions": [
-      { "answerText": "to find", "isCorrect": false },
-      { "answerText": "finding", "isCorrect": true },
-      { "answerText": "for finding", "isCorrect": false },
-      { "answerText": "find", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
-    ]
-  },
-  {
-    "questionText": "Have you visited the school _______ you studied?",
-    "answerOptions": [
-      { "answerText": "who", "isCorrect": false },
-      { "answerText": "which", "isCorrect": false },
-      { "answerText": "when", "isCorrect": false },
-      { "answerText": "where", "isCorrect": true },
-      { "answerText": "لا اعرف", "isCorrect": false }
-    ]
-  },
-  {
-    "questionText": "Where is the questioning being held?",
-    "audioUrl": "https://myenglevel.s3.me-south-1.amazonaws.com/dalilk-intermediate_08.mp3",
-    "answerOptions": [
-      { "answerText": "in a university", "isCorrect": true },
-      { "answerText": "in a park", "isCorrect": false },
-      { "answerText": "in a courtroom", "isCorrect": false },
-      { "answerText": "in a police station", "isCorrect": false },
-      { "answerText": "لا اعرف", "isCorrect": false }
+      { "answerText": "apple" },
+      { "answerText": "a" },
+      { "answerText": "I" },
+      { "answerText": "Sad" },
+      { "answerText": "am" },
+      { "answerText": "boy" },
+      { "answerText": "and" },
+      { "answerText": "an" },
+      { "answerText": "eats" }
     ]
   }
 ]

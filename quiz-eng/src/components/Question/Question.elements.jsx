@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import SuperHeroSVG from "../../assets/super-hero.svg";
 
+export const AccessibleContainer = styled.div`
+  opacity: ${(props) => (props.isAccessible ? 1 : 0.5)};
+`;
+
 export const QuestionMain = styled.main`
   position: relative;
   margin-top: 3rem;
+  direction: rtl;
 
   @media screen and (max-width: 50rem) {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 `;
 
@@ -17,7 +22,7 @@ export const QuestionWrapper = styled.div`
 `;
 
 export const QuestionContainer = styled.div`
-  max-width: 43.75rem;
+  max-width: 43.75rem; /* this help make width super fix in the middle */
   padding-bottom: 1.5rem;
   margin: 0px auto;
   padding: 0px 0.938rem;
@@ -25,7 +30,7 @@ export const QuestionContainer = styled.div`
 
 export const QuestionSubContainer = styled.div`
   top: 3.75rem;
-  left: 0px;
+  right: 0px;
   max-width: 100%;
   width: 100%;
   background: white;
@@ -37,7 +42,7 @@ export const QuestionSubContainer = styled.div`
   }
 `;
 export const QuestionTitleContainer = styled.div`
-  @media screen and (max-width: 31.25rem) {
+  @media screen and (max-width: 50rem) {
     width: 100%;
     margin: 0px auto;
     padding: 2rem 0px 0px;
@@ -46,23 +51,22 @@ export const QuestionTitleContainer = styled.div`
 `;
 
 export const QuestionTitle = styled.h2`
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0px;
   padding-top: 0px;
-  margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.3em;
-  text-align: left;
+  text-align: right;
 
-  @media screen and (max-width: 31.25rem) {
+  @media screen and (max-width: 50rem) {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 `;
 
 export const QuestionSubTitleContainer = styled.div`
   display: inline-flex;
-  -webkit-box-align: center;
   align-items: center;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -138,18 +142,17 @@ export const QuestionBanner = styled.div`
 export const QuestionBannerMain = styled.div`
   display: flex;
   flex-direction: row;
-  -webkit-box-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
   align-items: center;
 `;
 export const QuestionBannerSub = styled.div`
   @media screen and (max-width: 31.25rem) {
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 `;
 export const QuestionBannerLast = styled.div`
-  width: 60px;
+  width: 100%;
+
   @media screen and (max-width: 31.25rem) {
     height: 32px;
   }
@@ -158,25 +161,19 @@ export const QuestionBannerLast = styled.div`
 export const QuestionTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: stretch;
   align-items: stretch;
 `;
 export const QuestionTextContainerSub = styled.div`
   display: flex;
   flex-direction: row;
-  -webkit-box-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: stretch;
   align-items: stretch;
 `;
 export const QuestionTextContainerSec = styled.div`
   display: flex;
   flex-direction: row;
-  -webkit-box-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
   align-items: center;
 `;
 export const QuestionTextContainerThi = styled.div`
@@ -190,7 +187,7 @@ export const QuestionTextHeader = styled.h6`
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1.3em;
-  text-align: left;
+  text-align: right;
   @media screen and (max-width: 31.25rem) {
     font-size: 1rem;
   }
@@ -198,13 +195,11 @@ export const QuestionTextHeader = styled.h6`
 export const QuestionBannerArrowContainer = styled.div`
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: stretch;
   align-items: stretch;
 `;
 export const QuestionBannerArrowSubContainer = styled.div`
-  margin-left: 1rem;
+  margin-right: 1rem;
   @media screen and (max-width: 31.25rem) {
     width: 10px;
     height: 15px;
@@ -216,26 +211,33 @@ export const QuestionBannerArrowContain = styled.div`
 export const QuestionChapterOneContainer = styled.section`
   margin-bottom: 3rem;
   display: block;
+  border: 2px solid lightgray;
+  border-radius: 18px;
+  padding: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // This adds a mild shadow
 `;
 export const QuestionChapterOneHeaderContainer = styled.header`
   padding: 0px;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   font-weight: 700;
 `;
 export const QuestionChapterOneHeader = styled.h3`
-  margin-top: 0px;
+  margin-top: 5px;
+  margin-right: 5px;
   padding-top: 0px;
   margin-bottom: 0px;
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.3em;
-  text-align: left;
+  text-align: right;
+
   @media screen and (max-width: 31.25rem) {
     font-size: 1.125rem;
   }
 `;
 export const QuestionChapterOnePara = styled.p`
   margin-top: 0px;
+  margin-right: 5px;
   padding-top: 0px;
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -243,7 +245,7 @@ export const QuestionChapterOnePara = styled.p`
   font-size: 1rem;
   line-height: 1.5em;
   color: rgb(30, 45, 64);
-  text-align: left;
+  text-align: right;
   text-decoration: unset;
   @media screen and (max-width: 31.25rem) {
     font-size: 0.875rem;
@@ -259,29 +261,27 @@ export const QuestionChapterProgressContainer = styled.div`
 export const QuestionChapterProgress = styled.div`
   position: relative;
   height: 0.75rem;
-  background-color: rgb(14, 190, 117);
+  background-color: #4c47e9;
   transition: width 0.3s ease 0s;
   border-radius: 1rem;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   animation: 2s ease 0s 1 normal none running fAHHxO;
 `;
 export const QuestionChapterProgressSpan = styled.span`
   font-size: 0.625rem;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   height: 1.25rem;
-  left: calc(100% - 1.188rem);
+  right: calc(100% - 1.188rem);
   border-radius: 1.25rem;
-  background-color: rgb(14, 190, 117);
+  background-color: #4c47e9;
   color: rgb(255, 255, 255);
   padding: 0px 0.5rem;
   min-width: 30px;
   position: sticky;
+  margin-bottom: 0rem;
 `;
 export const QuestionChapterItemContainer = styled.div`
   position: relative;
@@ -289,7 +289,6 @@ export const QuestionChapterItemContainer = styled.div`
 export const QuestionChapterItemSubContainer = styled.div`
   position: relative;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 0.5rem;
@@ -301,11 +300,10 @@ export const QuestionChapterItemSubContainer = styled.div`
 export const QuestionChapterItemElement = styled.div`
   position: relative;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 0.5rem;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   padding: 1rem 0.5rem;
   border-radius: 1rem;
   cursor: pointer;
@@ -313,9 +311,7 @@ export const QuestionChapterItemElement = styled.div`
 export const QuestionChapterItemPart = styled.div`
   z-index: 2;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   flex: 0 0 auto;
   max-width: 5.625rem;
@@ -372,13 +368,13 @@ export const QuestionChapterPictureMain = styled.div`
 `;
 
 export const QuestionChapterItemSpan = styled.span`
-  text-align: left;
+  text-align: right;
   flex: 1 1 auto;
-  margin-left: 1rem;
+  margin-right: 1rem;
   color: rgb(30, 45, 64);
   opacity: 1;
   @media screen and (max-width: 31.25rem) {
-    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 `;
 
@@ -391,7 +387,7 @@ export const QuestionChapterItemPara = styled.p`
   font-size: 1rem;
   line-height: 1.5em;
   color: rgb(30, 45, 64);
-  text-align: left;
+  text-align: right;
   text-decoration: unset;
   @media screen and (max-width: 31.25rem) {
     font-size: 0.875rem;
@@ -406,7 +402,7 @@ export const QuestionChapterItemSubPara = styled.p`
   font-size: 1rem;
   line-height: 1.5em;
   color: rgb(30, 45, 64);
-  text-align: left;
+  text-align: right;
   text-decoration: unset;
 
   @media screen and (max-width: 31.25rem) {
@@ -417,7 +413,7 @@ export const QuestionChapterPointContainer = styled.div`
   z-index: 1;
   position: absolute;
   min-height: 100%;
-  left: 3.25rem;
+  right: 3.25rem;
   bottom: -3.125rem;
   border-radius: 0.5rem;
   width: 0.25rem;
@@ -427,5 +423,5 @@ export const QuestionChapterPoint = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(14, 190, 117);
+  background-color: #4c47e9;
 `;

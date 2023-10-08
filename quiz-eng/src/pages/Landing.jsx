@@ -34,8 +34,6 @@ const Landing = () => {
       <Article />
       <Divider />
       <Article />
-      <About />
-
       <FooterMe />
     </>
   );

@@ -1,4 +1,7 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
+import { database, ref, set, onValue } from "./firebase"; // adjust the path accordingly
+import { useUser } from "./UserContext"; // adjust the path accordingly
+import chapterItems from "./chapterItems";
 
 const LessonContext = createContext();
 
@@ -7,37 +10,74 @@ export const useLesson = () => {
 };
 
 export const LessonProvider = ({ children }) => {
-  // Initialize lessonsCompleted state
   const [lessonsCompleted, setLessonsCompleted] = useState({
     1: [true, false, false, false, false],
     2: [false, false, false, false, false],
-    // more chapters here
-  });
+    3: [false, false, false, false, false],
+  }); // Initialize as empty
+  const { user } = useUser(); // Grab user from UserContext
 
-  const incrementLesson = (chapterNumber) => {
-    let chapterLessons = lessonsCompleted[chapterNumber];
-    if (!chapterLessons) {
-      // Initialize
-      chapterLessons = [false, false, false, false, false];
-    }
+  useEffect(() => {
+    // If user is not authenticated, do not fetch data
+    if (!user || !user.uid) return;
 
-    for (let i = 0; i < chapterLessons.length; i++) {
-      if (!chapterLessons[i]) {
-        chapterLessons[i] = true;
-        break;
+    // Fetch lessons progress from Firebase based on the user's uid
+    const lessonsRef = ref(database, `lessons/${user.uid}`);
+    onValue(lessonsRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        setLessonsCompleted(data);
+      } else {
+        // If no data in the database for this user, initialize it.
+        setLessonsCompleted({
+          1: [true, false, false, false, false],
+          2: [false, false, false, false, false],
+          3: [false, false, false, false, false],
+          // more chapters here
+        });
       }
-    }
-
-    // Create a new object to force re-render
-    setLessonsCompleted({
-      ...lessonsCompleted,
-      [chapterNumber]: [...chapterLessons],
     });
+  }, [user]);
+
+  const saveProgressToFirebase = (data) => {
+    if (!user || !user.uid) return; // Do not save if user is not authenticated
+
+    const lessonsRef = ref(database, `lessons/${user.uid}`);
+    set(lessonsRef, data);
+  };
+
+  const incrementLesson = () => {
+    // Find the first incomplete lesson
+    const firstIncompleteLesson = chapterItems.find(
+      (item) => !lessonsCompleted[item.chapterId]?.[item.lessonId - 1]
+    );
+
+    if (firstIncompleteLesson) {
+      const { chapterId, lessonId } = firstIncompleteLesson;
+
+      // Clone the lessonsCompleted object and update the respective lesson as completed
+      const updatedProgress = { ...lessonsCompleted };
+
+      if (!updatedProgress[chapterId]) {
+        updatedProgress[chapterId] = [];
+      }
+      updatedProgress[chapterId][lessonId - 1] = true;
+
+      // Update local state
+      setLessonsCompleted(updatedProgress);
+
+      // Save updated progress to Firebase
+      saveProgressToFirebase(updatedProgress);
+    }
   };
 
   return (
-    <LessonContext.Provider value={{ lessonsCompleted, incrementLesson }}>
+    <LessonContext.Provider
+      value={{ lessonsCompleted, setLessonsCompleted, incrementLesson }}
+    >
       {children}
     </LessonContext.Provider>
   );
 };
+
+export default LessonProvider;

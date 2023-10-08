@@ -55,11 +55,12 @@ export const HeaderButton = styled.button`
   background-color: #40f1a8;
   color: #000000;
   font-weight: 500;
-  padding: 1rem;
+  padding: 0.8rem 3rem;
   border: none;
-  border-radius: 12px;
+  border-radius: 20px;
   font-size: 1.4rem;
   margin-top: 1rem;
+
 
 }
 

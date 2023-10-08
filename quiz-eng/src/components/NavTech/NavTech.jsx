@@ -55,7 +55,7 @@ const NavTech = () => {
               </NavContanierLogoMainSpan>
             </NavContanierLogoMain>
           </NavContanier>
-          <NavContanierSec>2</NavContanierSec>
+          <NavContanierSec></NavContanierSec>
           <NavContainerThi>
             <NavrightFir></NavrightFir>
             <NavrightSec>

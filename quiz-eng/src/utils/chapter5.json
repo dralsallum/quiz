@@ -1,6 +1,8 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "water",
+    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
     "questionSubText": "water",
     "correctSequence": [1],
     "questionType": "type1",
@@ -14,6 +16,8 @@
   },
   {
     "questionText": "أي واحدة من هذه هو الخبز",
+    "questionExplain": "bread",
+    "answerExplain": " الكلمة الإنجليزية 'bread' تترجم إلى 'خبز' بالعربية",
     "questionType": "type2",
     "answerOptions": [
       {
@@ -33,14 +37,32 @@
       }
     ]
   },
+
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Girl",
+    "questionExplain": "Girl",
+    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "correctSequence": [2],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "رجل" },
+      { "answerText": "ماء" },
+      { "answerText": "فتاة" },
+      { "answerText": "مفتاح" },
+      { "answerText": "شجرة" }
+    ]
+  },
   {
     "questionText": "اي واحدة من هذه بنت",
+    "questionExplain": "Girl",
+    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
     "questionType": "type2",
     "answerOptions": [
       {
         "answerText": "girl",
         "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/a443582c1eb03f3fcebfff4febdba3e4"
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
       },
       {
         "answerText": "man",
@@ -55,20 +77,9 @@
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Girl",
-    "correctSequence": [2],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "فتاة" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
-    ]
-  },
-  {
     "questionText": "اي واحد من هؤلاء هو الرجل",
+    "questionExplain": "Man",
+    "answerExplain": " الكلمة الإنجليزية 'Man' تترجم إلى 'رجل' بالعربية",
     "questionType": "type2",
     "answerOptions": [
       {
@@ -91,6 +102,8 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "The woman eats",
+    "questionExplain": "The woman eats",
+    "answerExplain": " الجملة الإنجليزية 'The woman eats' تترجم إلى 'المرأة تأكل' بالعربية",
     "questionType": "type1",
     "correctSequence": [3, 1],
     "answerOptions": [
@@ -105,6 +118,8 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "انا ذهبت للمدرسة",
+    "questionExplain": "I went to school",
+    "answerExplain": " الجملة الإنجليزية 'I went to school' تترجم إلى 'أنا ذهبت إلى المدرسة' بالعربية",
     "correctSequence": [2, 0, 3, 1],
     "questionType": "type3",
     "answerOptions": [
@@ -118,6 +133,8 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "Tree",
+    "questionExplain": "Tree",
+    "answerExplain": " الكلمة الإنجليزية 'Tree' تترجم إلى 'شجرة' بالعربية",
     "correctSequence": [4],
     "questionType": "type1",
     "answerOptions": [
@@ -131,6 +148,8 @@
   {
     "questionText": "أي واحدة من هذه هو ماء",
     "questionType": "type2",
+    "questionExplain": "water",
+    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
     "answerOptions": [
       {
         "answerText": "Bread",
@@ -150,16 +169,11 @@
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Boy",
-    "correctSequence": [3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "ولد" },
-      { "answerText": "طاولة" }
-    ]
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "ولد",
+    "questionExplain": "Boy",
+    "answerExplain": " الكلمة الإنجليزية 'Boy' تترجم إلى 'ولد' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "boy"
   }
 ]

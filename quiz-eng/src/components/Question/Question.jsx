@@ -51,16 +51,32 @@ import {
   QuestionTitle,
   QuestionTitleContainer,
   QuestionWrapper,
+  AccessibleContainer,
 } from "./Question.elements";
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
 import { useLesson } from "../../LessonContext";
-
 const Arrow = () => (
   <svg width="18" height="18" viewBox="0 0 24 24">
     <path d="M12 16l4-4h-8z" />
   </svg>
 );
+const groupByChapter = (items) => {
+  return items.reduce((acc, item) => {
+    if (!acc[item.chapterId]) {
+      acc[item.chapterId] = [];
+    }
+    acc[item.chapterId].push(item);
+    return acc;
+  }, {});
+};
+
+const chapters = groupByChapter(chapterItems);
+
+const areAllLessonsCompleted = (lessons) => {
+  return lessons.every((lesson) => lesson === true);
+};
+
 const ChapterItem = ({
   imgSrc,
   mainText,
@@ -70,8 +86,6 @@ const ChapterItem = ({
   url,
   isAccessible,
 }) => {
-  const containerStyle = isAccessible ? { opacity: 1 } : { opacity: 0.5 };
-
   const content = (
     <QuestionChapterItemElement>
       <QuestionChapterItemPart>
@@ -106,7 +120,7 @@ const ChapterItem = ({
   );
 
   return (
-    <QuestionChapterItemContainer style={containerStyle}>
+    <AccessibleContainer isAccessible={isAccessible}>
       {isAccessible ? (
         <Link to={url} style={{ textDecoration: "none", color: "inherit" }}>
           {content}
@@ -114,12 +128,17 @@ const ChapterItem = ({
       ) : (
         content
       )}
-    </QuestionChapterItemContainer>
+    </AccessibleContainer>
   );
 };
 
 // A simplified version of your Chapter
-const Chapter = ({ chapterNumber, totalLessons, chapterItems }) => {
+const Chapter = ({
+  chapterNumber,
+  totalLessons,
+  chapterItems,
+  isAccessible: isChapterAccessible,
+}) => {
   const { lessonsCompleted } = useLesson();
   const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
   const completedLessonsCount = lessonsForThisChapter.filter(
@@ -131,10 +150,10 @@ const Chapter = ({ chapterNumber, totalLessons, chapterItems }) => {
     <QuestionChapterOneContainer>
       <QuestionChapterOneHeaderContainer>
         <QuestionChapterOneHeader>
-          Chapter {chapterNumber}
+          الفصل {chapterNumber}
         </QuestionChapterOneHeader>
         <QuestionChapterOnePara>
-          Lessons completed {completedLessonsCount}/{totalLessons}
+          الدروس المكتملة {completedLessonsCount}/{totalLessons}
         </QuestionChapterOnePara>
         <QuestionChapterProgressContainer>
           <QuestionChapterProgress style={{ width: progressWidth }}>
@@ -145,7 +164,8 @@ const Chapter = ({ chapterNumber, totalLessons, chapterItems }) => {
         </QuestionChapterProgressContainer>
       </QuestionChapterOneHeaderContainer>
       {chapterItems.map((item, index) => {
-        const isAccessible = lessonsForThisChapter[index];
+        const isAccessible =
+          isChapterAccessible && lessonsForThisChapter[index];
         return (
           <ChapterItem
             key={index}
@@ -164,24 +184,16 @@ const Chapter = ({ chapterNumber, totalLessons, chapterItems }) => {
 };
 
 const Question = () => {
-  const [quizCompletedCount, setQuizCompletedCount] = useState(0);
-  const [progressWidth, setProgressWidth] = useState("0%");
-
-  const [lessonsCompleted, setLessonsCompleted] = useState({
-    1: [true, false, false, false, false], // for chapter 1
-    2: [false, false, false], // for chapter 2
-    // add more chapters as needed
-  });
-
+  const { lessonsCompleted } = useLesson();
   return (
     <QuestionMain>
       <QuestionWrapper>
         <QuestionContainer>
           <QuestionSubContainer>
             <QuestionTitleContainer>
-              <QuestionTitle>Complete English</QuestionTitle>
+              <QuestionTitle>تعلم الانجليزي</QuestionTitle>
               <QuestionSubTitleContainer>
-                <QuestionSubTitle>Beginner A1</QuestionSubTitle>
+                <QuestionSubTitle>مبتدى أ1</QuestionSubTitle>
                 <QuestionSubIconContainer>
                   <QuestionSubIcon>
                     <Arrow />
@@ -204,7 +216,7 @@ const Question = () => {
                             <QuestionTextContainerSec>
                               <QuestionTextContainerThi>
                                 <QuestionTextHeader>
-                                  Boost language skills with 50% off Premium
+                                  زِّد مهارات اللغة بخصم 50% على النسخة المميزة
                                 </QuestionTextHeader>
                               </QuestionTextContainerThi>
                             </QuestionTextContainerSec>
@@ -231,30 +243,22 @@ const Question = () => {
                     </QuestionTimeKey>
                   </QuestionTimeKeyContainer>
                 </QuestionTimeBoost>
-                <Chapter
-                  chapterNumber={1}
-                  lessonsCompleted={1}
-                  totalLessons={5}
-                  chapterItems={chapterItems}
-                />
-                <Chapter
-                  chapterNumber={2}
-                  lessonsCompleted={1}
-                  totalLessons={5}
-                  chapterItems={chapterItems}
-                />
-                <Chapter
-                  chapterNumber={3}
-                  lessonsCompleted={1}
-                  totalLessons={5}
-                  chapterItems={chapterItems}
-                />
-                <Chapter
-                  chapterNumber={4}
-                  lessonsCompleted={1}
-                  totalLessons={5}
-                  chapterItems={chapterItems}
-                />
+                {Object.keys(chapters).map((chapterId, index) => {
+                  const currentChapterItems = chapters[chapterId];
+                  const prevChapterLessons = lessonsCompleted[String(index)];
+                  const isAccessible =
+                    index === 0 || // the first chapter is always accessible
+                    areAllLessonsCompleted(prevChapterLessons || []); // subsequent chapters are accessible if all lessons in the previous chapter are completed
+                  return (
+                    <Chapter
+                      key={chapterId}
+                      chapterNumber={parseInt(chapterId, 10)}
+                      totalLessons={currentChapterItems.length}
+                      chapterItems={currentChapterItems}
+                      isAccessible={isAccessible}
+                    />
+                  );
+                })}
               </QuestionTimeBoostContainer>
             </QuestionTimeline>
           </QuestionSubContainer>

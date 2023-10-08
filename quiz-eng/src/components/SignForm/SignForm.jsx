@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   LoginContainer,
   RegistarButton,
@@ -10,21 +10,23 @@ import {
   SignContainer,
   SignUpForm,
 } from "./SignForm.elements";
-import { auth } from "../../firebase";
+import { setPersistence, auth, browserLocalPersistence } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "@firebase/auth";
 import { useUser } from "../../UserContext"; // Import the useUser hook from UserContext
+import { useLesson } from "../../LessonContext"; // Import the useUser hook from UserContext
+import { database, ref, set, onValue } from "../../firebase";
 
 const SignForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+  const { setLessonsCompleted } = useLesson();
+  const { setUser } = useUser();
   const navigate = useNavigate();
-  const { setUser } = useUser(); // Use the setUser function from UserContext
 
   const getArabicErrorMessage = (englishMessage) => {
     // ... (same as before)
@@ -37,26 +39,51 @@ const SignForm = () => {
   const signIn = async (e) => {
     e.preventDefault();
     setErrorMessage("");
+
+    await setPersistence(auth, browserLocalPersistence);
+
     signInWithEmailAndPassword(auth, email, password)
       .then((authData) => {
         if (authData) {
-          setUser({ emailPrefix: extractEmailPrefix(email) }); // Set emailPrefix in UserContext
-          navigate("/");
+          const { user } = authData;
+          const uid = user.uid; // This is your user's unique ID
+
+          setUser({ uid, emailPrefix: extractEmailPrefix(email) });
+
+          // Fetch lessons progress from Firebase based on the user's uid
+          const userLessonsRef = ref(database, "lessons/" + uid);
+          onValue(userLessonsRef, (snapshot) => {
+            const val = snapshot.val();
+            setLessonsCompleted(
+              val || {
+                1: [true, false, false, false, false],
+                2: [false, false, false, false, false],
+                // more chapters here
+              }
+            );
+            navigate("/train");
+          });
         }
       })
       .catch((error) => {
+        // Handle error (you probably want to display a message to the user)
         setErrorMessage(error.message);
       });
   };
 
-  const register = (e) => {
+  const register = async (e) => {
     e.preventDefault();
     setErrorMessage("");
+
+    await setPersistence(auth, browserLocalPersistence);
+
     createUserWithEmailAndPassword(auth, email, password)
       .then((authData) => {
         if (authData) {
-          setUser({ emailPrefix: extractEmailPrefix(email) }); // Set emailPrefix in UserContext
-          navigate("/");
+          const { user } = authData;
+          const uid = user.uid; // This is your user's unique ID
+          setUser({ uid, emailPrefix: extractEmailPrefix(email) });
+          navigate("/train");
         }
       })
       .catch((error) => {

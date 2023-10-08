@@ -23,7 +23,7 @@ import {
 } from "./Footer.elements";
 import { FaTiktok } from "react-icons/fa";
 import { NavLogo, NavbarContainerImg } from "../NavbarMe/Navbar.elements";
-import Logo from "../../assets/12english-logo.png";
+import Logo from "../../assets/main-english-logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -1,0 +1,145 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "She eats bread",
+    "answerExplain": "الجملة 'She eats bread' تترجم إلى 'هي تأكل الخبز' بالعربية.",
+    "questionSubText": "She eats bread",
+    "correctSequence": [1, 0, 5],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "تاكل" },
+      { "answerText": "هي" },
+      { "answerText": "اشرب" },
+      { "answerText": "الماء" },
+      { "answerText": "اكل" },
+      { "answerText": "خبزاً" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "She eats bread, I drink water",
+    "answerExplain": "الجملة 'She eats bread, I drink water' تترجم إلى 'هي تأكل الخبز، أنا أشرب الماء' بالعربية.",
+    "questionSubText": "She eats bread, I drink water",
+    "correctSequence": [6, 3, 1, 0, 2, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "انا" },
+      { "answerText": "الخبز" },
+      { "answerText": "اشرب" },
+      { "answerText": "تاكل" },
+      { "answerText": "الماء" },
+      { "answerText": "الرجل" },
+      { "answerText": "هي" },
+      { "answerText": "المراة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "The woman drinks water",
+    "answerExplain": "الجملة 'The woman drinks water' تترجم إلى 'المرأة تشرب الماء' بالعربية.",
+    "questionSubText": "The woman drinks water",
+    "correctSequence": [6, 5, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "انها" },
+      { "answerText": "مياه" },
+      { "answerText": "وانا" },
+      { "answerText": "الماء" },
+      { "answerText": "انا" },
+      { "answerText": "تشرب" },
+      { "answerText": "المراة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "أنا أشرب",
+    "answerExplain": "الجملة 'أنا أشرب' تترجم إلى 'I drink' بالإنجليزية.",
+    "questionSubText": "أنا أشرب",
+    "correctSequence": [1, 0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "drink" },
+      { "answerText": "I" },
+      { "answerText": "apple" },
+      { "answerText": "woman" },
+      { "answerText": "she" },
+      { "answerText": "drink" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "a waman and an apple.",
+    "answerExplain": "الجملة 'امراة وتفاحة' تترجم إلى 'a woman and an apple' بالإنجليزية.",
+    "questionSubText": "امراة وتفاحة",
+    "correctSequence": [3, 0, 2, 1, 4],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "woman" },
+      { "answerText": "an" },
+      { "answerText": "and" },
+      { "answerText": "a" },
+      { "answerText": "apple" },
+      { "answerText": "is" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "The woman eats",
+    "questionExplain": "The woman eats",
+    "answerExplain": "الجملة 'The woman eats' تترجم إلى 'المرأة تأكل' بالعربية.",
+    "questionType": "type1",
+    "correctSequence": [3, 1],
+    "answerOptions": [
+      { "answerText": "الولد" },
+      { "answerText": "تاكل" },
+      { "answerText": "مياه" },
+      { "answerText": "المراة" },
+      { "answerText": "الماء" },
+      { "answerText": "ياكل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": " ___ She",
+    "questionExplain": "She drives",
+    "answerExplain": "الجملة 'She drives' تترجم إلى 'هي تقود' بالعربية.",
+    "questionType": "type3",
+    "correctSequence": [0],
+    "answerOptions": [
+      { "answerText": "drives" },
+      { "answerText": "drive" },
+      { "answerText": "driving" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "Sleep!",
+    "questionExplain": "Sleep!",
+    "answerExplain": "الكلمة 'Sleep!' تترجم إلى 'نام!' بالعربية.",
+    "questionType": "type1",
+    "correctSequence": [3],
+    "answerOptions": [
+      { "answerText": "بنت" },
+      { "answerText": "مياه" },
+      { "answerText": "ال" },
+      { "answerText": "نام" },
+      { "answerText": "كل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "الولد يشرب الماء",
+    "questionExplain": "the boy drinks water",
+    "answerExplain": "الجملة 'الولد يشرب الماء' تترجم إلى 'the boy drinks water' بالإنجليزية.",
+    "questionType": "type4",
+    "correctAnswer": "the boy drinks water"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "المرأة تأكل التفاحة",
+    "questionExplain": "the woman eats the apple",
+    "answerExplain": "الجملة 'المرأة تأكل التفاحة' تترجم إلى 'the woman eats the apple' بالإنجليزية.",
+    "questionType": "type4",
+    "correctAnswer": "the woman eats the apple"
+  }
+]

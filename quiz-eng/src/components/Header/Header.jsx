@@ -24,14 +24,14 @@ const Header = () => {
     <>
       <HeaderWrapper>
         <HeaderContainer>
-          <HeaderPara>اعرف مستواك باللغة الانجليزية في 7 دقائق</HeaderPara>
+          <HeaderPara>تعلم الانجليزية واستخدمها في حياتك اليومية</HeaderPara>
           <HeaderList>
             <HeaderElements>
               <FontAwesomeIcon
                 icon={faMoneyBill}
                 style={{ color: "#ffffff", marginLeft: "0.25rem" }}
               />
-              مجاناً وبدون ما تضطر تدفع اي مبلغ مالي للاختبار
+              مجاناً وبدون ما تضطر تدفع اي مبلغ مالي للتجربة
             </HeaderElements>
             <HeaderElements>
               <FontAwesomeIcon
@@ -41,14 +41,14 @@ const Header = () => {
                   marginLeft: "0.25rem",
                 }}
               />
-              ١٢ سؤال ممتع ومتنوع يختبر مستواك بشكل حقيقي
+              اسئلة ممتعة ومتنوعة تطور مستواك بشكل حقيقي
             </HeaderElements>
             <HeaderElements>
               <FontAwesomeIcon
                 icon={faHeart}
                 style={{ color: "#ffffff", marginLeft: "0.25rem" }}
               />
-              يعلمك قدراتك التقريبية في اختبار الايلتس والستيب
+              يعلمك قدراتك في معظم الاختبارات الانجليزية
             </HeaderElements>
           </HeaderList>
 
@@ -56,13 +56,7 @@ const Header = () => {
             to="/train"
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            <HeaderButton>
-              حدد مستواك مع{" "}
-              <span>
-                <CountUp start={8000} end={1200000} duration={3} />
-              </span>{" "}
-              شخص
-            </HeaderButton>
+            <HeaderButton>تعلم مجاناً اليوم</HeaderButton>
           </Link>
         </HeaderContainer>
         <HeaderImgContainer>

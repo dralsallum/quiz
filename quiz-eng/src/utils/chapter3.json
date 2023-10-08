@@ -1,0 +1,134 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I am a woman.",
+    "answerExplain": " نستخدم 'am' مع الضمير 'I'. لذا، الجملة الصحيحة هي 'I am a woman.'.",
+    "questionSubText": "I ___ a woman.",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "are" },
+      { "answerText": "am" },
+      { "answerText": "is" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I am a man.",
+    "answerExplain": "نستخدم 'am' مع الضمير 'I'. لذا، الجملة الصحيحة هي 'I am a man.'.",
+    "questionSubText": "I am ___ man.",
+    "correctSequence": [0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "a" },
+      { "answerText": "an" },
+      { "answerText": "are" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I eat alot.",
+    "answerExplain": "في اللغة الإنجليزية، نستخدم الشكل الأساسي للفعل مع الضمير 'I'، وهو 'eat' في هذه الحالة.",
+    "questionSubText": "I ___ alot",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "eats" },
+      { "answerText": "eating" },
+      { "answerText": "eat" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I eat an apple.",
+    "answerExplain": "في اللغة العربية، 'آنا' يعني 'I', 'اكل' يعني 'eat', و 'تفاحة' تعني 'apple'. الترتيب الصحيح في اللغة العربية هو الفاعل-الفعل-المكمل.",
+    "questionSubText": "I eat an apple.",
+    "correctSequence": [0, 6, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "آنا" },
+      { "answerText": "ياكلان" },
+      { "answerText": "ناكل" },
+      { "answerText": "تفاحة" },
+      { "answerText": "امراة" },
+      { "answerText": "وهي" },
+      { "answerText": "اكل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "a waman and an apple.",
+    "answerExplain": "في اللغة الإنجليزية، 'a' و 'an' هما أدوات غير محددة. نستخدم 'a' قبل الكلمات التي تبدأ بصوت حرف ساكن، و 'an' قبل الكلمات التي تبدأ بصوت حرف متحرك.",
+    "questionSubText": "امراة وتفاحة",
+    "correctSequence": [3, 0, 2, 1, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "woman" },
+      { "answerText": "an" },
+      { "answerText": "and" },
+      { "answerText": "a" },
+      { "answerText": "apple" },
+      { "answerText": "is" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "The woman eats",
+    "questionExplain": "The woman eats",
+    "answerExplain": " الجملة الإنجليزية 'The woman eats' تترجم إلى 'المرأة تأكل' بالعربية",
+    "questionType": "type1",
+    "correctSequence": [3, 1],
+    "answerOptions": [
+      { "answerText": "الولد" },
+      { "answerText": "تاكل" },
+      { "answerText": "مياه" },
+      { "answerText": "المراة" },
+      { "answerText": "الماء" },
+      { "answerText": "ياكل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": " ___ She",
+    "questionExplain": "She drinks",
+    "answerExplain": "في اللغة الإنجليزية، نستخدم 'drinks' مع الضمير 'She' لأنه يعبر عن الفعل في الزمن الحاضر البسيط.",
+    "questionType": "type3",
+    "correctSequence": [0],
+    "answerOptions": [
+      { "answerText": "drinks" },
+      { "answerText": "drink" },
+      { "answerText": "drinking" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "Drink!",
+    "questionExplain": "Drink!",
+    "answerExplain": "الفعل 'اشرب' في اللغة العربية هو أمر بالشرب، ويُترجم إلى 'Drink' في اللغة الإنجليزية.",
+    "questionType": "type1",
+    "correctSequence": [3],
+    "answerOptions": [
+      { "answerText": "بنت" },
+      { "answerText": "مياه" },
+      { "answerText": "ال" },
+      { "answerText": "اشرب" },
+      { "answerText": "كل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "هو وانا ناكل",
+    "questionExplain": "He and I eat",
+    "answerExplain": "الجملة 'هو وأنا نأكل' تترجم إلى 'He and I eat' بالإنجليزية.",
+    "questionType": "type4",
+    "correctAnswer": "He and I eat"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "هي امراة",
+    "questionExplain": "She is a woman",
+    "answerExplain": "الجملة 'هي امرأة' تترجم إلى 'She is a woman' بالإنجليزية.",
+    "questionType": "type4",
+    "correctAnswer": "She is a woman"
+  }
+]
