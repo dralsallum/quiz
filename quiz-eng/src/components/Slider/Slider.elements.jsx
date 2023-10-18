@@ -4,7 +4,6 @@ export const SliderWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   direction: rtl;
 `;
 
@@ -12,21 +11,17 @@ export const SliderArrowContainerAll = styled.div`
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `;
 export const SliderArrowContainer = styled.div`
-  position: absolute;
+  position: relative;
   gap: 1rem;
-  top: -2.2rem;
-  left: 0;
   display: flex;
 `;
 export const SliderArrowContainer1 = styled.div`
-  position: absolute;
+  position: relative;
   gap: 1rem;
-  top: -2.2rem;
-  right: 0;
   display: flex;
   font-size: 1.6rem;
   font-weight: bold;
@@ -39,11 +34,11 @@ export const SliderArrowContainer1 = styled.div`
 `;
 
 export const SliderArrowButtonRight = styled.button`
-  font-size: 1.2rem;
-  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
   color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: white;
   cursor: pointer;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
@@ -55,11 +50,11 @@ export const SliderArrowButtonRight = styled.button`
   }
 `;
 export const SliderArrowButtonLeft = styled.button`
-  font-size: 1.2rem;
-  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
   color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: white;
   cursor: pointer;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
@@ -72,7 +67,7 @@ export const SliderArrowButtonLeft = styled.button`
 `;
 
 export const SliderContainer = styled.div`
-  padding: 2.5rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -84,7 +79,6 @@ export const SliderContainer = styled.div`
 `;
 
 export const SliderHeader = styled.div`
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +106,7 @@ export const SliderSubHeaderSpan = styled.span`
 `;
 
 export const SliderCardContainer = styled.div`
+  direction: ltr;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,15 +155,27 @@ export const SliderCardSubSpan2 = styled.div`
 `;
 export const SliderCardSubSpan3 = styled.div`
   color: #000000;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1rem;
   padding-right: 0.2rem;
   margin-left: 0.2rem;
+  margin-bottom: 0.2rem;
+  overflow: hidden;
+  position: relative;
+  max-height: 2.2em; // Assuming line-height of 1.1, thus 2 lines will be 2.2em
+  line-height: 1.1em;
+
+  &:after {
+    content: "...";
+
+    background-color: white; // Match this with your background color
+  }
 
   @media screen and (max-width: 960px) {
     font-size: 0.9rem;
   }
 `;
+
 export const SliderCardSubSpan4 = styled.span`
   color: rgb(140 139 139);
   font-size: 0.7rem;

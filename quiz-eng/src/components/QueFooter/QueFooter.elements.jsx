@@ -56,10 +56,12 @@ export const FooterLiLe = styled(Link)`
   display: inline-flex;
   height: 100%;
   justify-content: center;
-  border-top: 0.125rem solid #4c47e9;
+  border-top: ${(props) =>
+    props.currentComponent === "question" ? "0.125rem solid #4c47e9" : "none"};
   background: rgb(255, 255, 255);
   color: inherit;
   text-decoration: inherit;
+  transition: border-top 0.3s ease;
 `;
 export const FootLiCon = styled.div`
   align-items: center;
@@ -90,9 +92,12 @@ export const FooterLiRi = styled(Link)`
   color: inherit;
   text-decoration: inherit;
   background: rgb(255, 255, 255);
+  border-top: ${(props) =>
+    props.currentComponent === "store" ? "0.125rem solid #4c47e9" : "none"};
   display: inline-flex;
   height: 100%;
   justify-content: center;
+  transition: border-top 0.3s ease;
 `;
 export const FooterPin = styled.div`
   align-items: center;

@@ -1,0 +1,150 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Brother",
+    "answerExplain": "الكلمة الإنجليزية 'Brother' تترجم إلى 'أخ' بالعربية.",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "brother",
+    "correctSequence": [0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "أخ" },
+      { "answerText": "أخت" },
+      { "answerText": "أب" },
+      { "answerText": "أم" },
+      { "answerText": "صديق" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Family",
+    "answerExplain": "الكلمة الإنجليزية 'Family' تترجم إلى 'عائلة' بالعربية.",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "family",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "مدرسة" },
+      { "answerText": "شجرة" },
+      { "answerText": "بيت" },
+      { "answerText": "عائلة" },
+      { "answerText": "مكتب" }
+    ]
+  },
+  {
+    "questionText": "كيف تقول ... بالإنجليزية؟",
+    "questionExplain": "أخت",
+    "answerExplain": "الكلمة الإنجليزية 'Sister' تترجم إلى 'أخت' بالعربية.",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "أخت",
+    "correctSequence": [0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Sister" },
+      { "answerText": "Mother" },
+      { "answerText": "Father" },
+      { "answerText": "Friend" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations about family relationships.",
+    "avatar": "../../assets/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Father",
+        "arabic": "أب"
+      },
+      {
+        "english": "Mother",
+        "arabic": "أم"
+      },
+      {
+        "english": "Son",
+        "arabic": "ابن"
+      },
+      {
+        "english": "Daughter",
+        "arabic": "ابنة"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Cousin",
+    "answerExplain": "الكلمة الإنجليزية 'Cousin' تترجم إلى 'ابن العم/الخال' أو 'ابنة العم/الخال' بالعربية.",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "cousin",
+    "correctSequence": [2],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "جار" },
+      { "answerText": "صديق" },
+      { "answerText": "ابن العم/الخال" },
+      { "answerText": "طالب" },
+      { "answerText": "مدرس" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Nephew",
+    "answerExplain": "الكلمة الإنجليزية 'Nephew' تترجم إلى 'ابن الأخ/الأخت' بالعربية.",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "nephew",
+    "correctSequence": [1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "جد" },
+      { "answerText": "ابن الأخ/الأخت" },
+      { "answerText": "أب" },
+      { "answerText": "عم" },
+      { "answerText": "خال" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Aunt",
+    "answerExplain": "الكلمة الإنجليزية 'Aunt' تترجم إلى 'عمة/خالة' بالعربية.",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "aunt",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "جدة" },
+      { "answerText": "أم" },
+      { "answerText": "خت" },
+      { "answerText": "عمة/خالة" },
+      { "answerText": "ابنة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "جدة",
+    "answerExplain": "الكلمة الإنجليزية 'Grandmother' تترجم إلى 'جدة' بالعربية.",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "جدة",
+    "correctSequence": [0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Grandmother" },
+      { "answerText": "Mother" },
+      { "answerText": "Sister" },
+      { "answerText": "Daughter" }
+    ]
+  },
+  {
+    "questionText": "من هو مدرسك؟",
+    "questionExplain": "Who is your teacher?",
+    "answerExplain": "سؤال عن الشخص المعلم.",
+    "questionType": "type4",
+    "correctAnswer": "Who is your teacher?"
+  },
+  {
+    "questionText": "ما اسم أختك؟",
+    "questionExplain": "What is your sister's name?",
+    "answerExplain": "سؤال عن اسم الأخت.",
+    "questionType": "type4",
+    "correctAnswer": "What is your sister's name?"
+  }
+]

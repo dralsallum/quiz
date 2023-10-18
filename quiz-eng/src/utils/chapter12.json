@@ -1,0 +1,150 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Universe",
+    "answerExplain": " الكلمة الإنجليزية 'Universe' تترجم إلى 'الكون' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "universe",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "مكان" },
+      { "answerText": "كوكب" },
+      { "answerText": "الكون" },
+      { "answerText": "أرض" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Philosophy",
+    "answerExplain": " الكلمة العربية 'فلسفة' تترجم إلى 'Philosophy' بالإنجليزية",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "فلسفة",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Physics" },
+      { "answerText": "Philosophy" },
+      { "answerText": "Photo" },
+      { "answerText": "Physiology" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Democracy",
+    "answerExplain": " الكلمة العربية 'ديمقراطية' تترجم إلى 'Democracy' بالإنجليزية",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "ديمقراطية",
+    "questionType": "type4",
+    "correctAnswer": "democracy"
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Galaxy",
+    "answerExplain": " الكلمة الإنجليزية 'Galaxy' تترجم إلى 'مجرة' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "galaxy",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "نجم" },
+      { "answerText": "قمر" },
+      { "answerText": "شمس" },
+      { "answerText": "مجرة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Molecule",
+    "answerExplain": " الكلمة الإنجليزية 'Molecule' تترجم إلى 'جزيئة' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "molecule",
+    "correctSequence": [0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "جزيئة" },
+      { "answerText": "ذرة" },
+      { "answerText": "نواة" },
+      { "answerText": "خلية" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/dude.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Ocean",
+        "arabic": "محيط"
+      },
+      {
+        "english": "Mountain",
+        "arabic": "جبل"
+      },
+      {
+        "english": "Forest",
+        "arabic": "غابة"
+      },
+      {
+        "english": "Desert",
+        "arabic": "صحراء"
+      }
+    ]
+  },
+  {
+    "questionText": "كيف تقول ... بالإنجليزية؟",
+    "questionExplain": "___  many books do you have?",
+    "answerExplain": " الكلمة الإنجليزية 'How many books do you have' تترجم إلى 'كم عدد الكتب التي لديك؟' بالعربية.",
+    "avatar": "../../assets/cool2.png",
+    "questionSubText": "?many books do ___ have",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "does" },
+      { "answerText": "is" },
+      { "answerText": "you" },
+      { "answerText": "he" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/dude2.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "River",
+        "arabic": "نهر"
+      },
+      {
+        "english": "Sky",
+        "arabic": "سماء"
+      },
+      {
+        "english": "Island",
+        "arabic": "جزيرة"
+      },
+      {
+        "english": "Lake",
+        "arabic": "بحيرة"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب الجملة التالية بالإنجليزية:",
+    "questionSubText": "أنا أذهب إلى المدرسة كل يوم.",
+    "questionExplain": "I go to school every day.",
+    "answerExplain": " الجملة الإنجليزية 'I go to school every day.' تترجم إلى 'أنا أذهب إلى المدرسة كل يوم.' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "I go to school every day"
+  },
+  {
+    "questionText": "اكتب الجملة التالية بالإنجليزية:",
+    "questionSubText": "هل يمكنك مساعدتي في الواجب المنزلي؟",
+    "questionExplain": "Can you help me with the homework?",
+    "answerExplain": " الجملة الإنجليزية 'Can you help me with the homework?' تترجم إلى 'هل يمكنك مساعدتي في الواجب المنزلي؟' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "Can you help me with the homework"
+  }
+]

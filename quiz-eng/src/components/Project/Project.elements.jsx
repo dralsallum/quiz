@@ -1,5 +1,17 @@
 import styled, { keyframes, css } from "styled-components";
 
+const bounceAnimation = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+`;
+
 const drawerContentAnim = keyframes`
   0% {
     opacity: 0;
@@ -71,7 +83,7 @@ export const PSecStart = styled.div`
 export const PSecStartCon = styled.div`
   line-height: 39px;
   padding-right: 10px;
-  margin-top: -16px;
+  margin-top: -26px;
 `;
 export const PLangCon = styled.div`
   align-items: center;
@@ -98,12 +110,12 @@ export const PLangImgCon = styled.div`
 export const PLanguageImgCanvas = styled.img`
   vertical-align: top;
   width: 100px;
-  height: 161px;
+  height: 150px;
   aspect-ratio: auto 146 / 216;
   overflow-clip-margin: content-box;
   overflow: clip;
   @media screen and (max-width: 700px) {
-    height: 160px;
+    height: 150px;
   }
 `;
 export const PLangSubWrap = styled.div`
@@ -166,7 +178,6 @@ export const PLanguageSoundButtonSvg = styled.svg`
   cursor: pointer;
 `;
 export const PLanguageSouFirstDiv = styled.div`
-  --offset: 13px;
   cursor: default;
   display: inline;
   padding: 0 0 4px;
@@ -543,7 +554,7 @@ export const SCon = styled.div`
   @media screen and (max-width: 700px) {
     background-color: ${(props) => props.backgroundColor || "#ffffff"};
     border-top: 2px solid lightgrey;
-    max-height: 140px;
+    max-height: 120px;
     overflow: visible;
     bottom: 0;
     position: relative;
@@ -994,7 +1005,7 @@ export const PTCon = styled.div`
   gap: 0.8rem;
 `;
 export const PACon = styled.div`
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1019,7 +1030,7 @@ export const SlWrap = styled.div`
   transform: translate3d(0, 100%, 0);
   transition: all 0.25s ease-in-out;
   padding: 1rem 0;
-  border-radius: 8px;
+  border-radius: 14px;
   box-shadow: 0 0 0.625rem -0.125rem #d6dee6;
   z-index: 1000;
 `;
@@ -1063,6 +1074,13 @@ export const SlReSu = styled.div`
   overflow: hidden;
   margin: 0px auto;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    animation: ${bounceAnimation} 1s infinite;
+  }
 `;
 export const SlReSvg = styled.svg`
   width: 100%;
@@ -1078,7 +1096,7 @@ export const SlReHe = styled.h3`
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.3em;
-  text-align: left;
+  text-align: right;
 
   @media screen and (max-width: 700px) {
     font-size: 1.125rem;
@@ -1109,7 +1127,6 @@ export const SlSaLi = styled.li`
 export const SlSaSub = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 `;
 export const SlSaLe = styled.div`
   display: flex;
@@ -1125,13 +1142,16 @@ export const SlSaSubIc = styled.div`
   width: 1.25rem;
   height: 1.25rem;
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
-export const SlSaIcSvg = styled.svg`
+export const SlSaIcSvg = styled.div`
   width: 100%;
   height: 100%;
   transform: translate3d(0px, 0px, 0px);
   content-visibility: visible;
-  overflow: hidden;
+  margin-top: 5px;
 `;
 export const SlSaBut = styled.button`
   width: 1.25rem;
@@ -1228,3 +1248,137 @@ export const SlStBut = styled.button`
     width: 100%;
   }
 `;
+export const CroWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroCon = styled.div`
+  height: 100%;
+  width: 100%;
+  position: relative;
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroReCon = styled.div`
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroSubCon = styled.div`
+  align-content: center;
+  display: grid;
+  font-size: 19px;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroTe = styled.div`
+  grid-gap: 16px;
+  display: grid;
+  transform: translateZ(0);
+  grid-template-rows: min-content minmax(0, 1fr);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroTeCon = styled.div`
+  grid-gap: 8px;
+  display: grid;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroTeHe = styled.h1`
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 0;
+  text-align: right;
+  width: 100%;
+  font-weight: 700;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroTeSpan = styled.span`
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 0;
+  text-align: right;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroQa = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroQaWrap = styled.div`
+  display: grid;
+  text-align: initial;
+  grid-gap: 16px 20px;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(4, 75px);
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroQaSpan = styled.span`
+  display: inline-flex;
+  flex-direction: column;
+  box-sizing: inherit;
+  font-family: din-round, sans-serif;
+  outline: none;
+  text-align: initial;
+  font-size: 19px;
+  cursor: default;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroQaBut = styled.button`
+  cursor: pointer;
+  flex: 1;
+  font-size: 19px;
+  border-radius: 12px;
+  color: rgb(75, 75, 75);
+  height: 50px;
+  width: 150px;
+  line-height: 1.15;
+  font-weight: 500;
+  text-transform: none;
+  background: none;
+  border-width: 2px 2px 4px;
+  border: 3px solid #e5e5e5;
+  box-shadow: rgba(0, 0, 0, 0.2) -2px 2px 0.5px;
+
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const CroQaSp = styled.span`
+  @media screen and (max-width: 700px) {
+  }
+`;
+export const GearSvg = styled.svg``;

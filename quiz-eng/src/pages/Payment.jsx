@@ -1,10 +1,10 @@
 import React from "react";
-import { FooterMe, NavbarMe, Pay } from "../components";
+import { FooterMe, NavTech, NavbarMe, Pay } from "../components";
 
 const Payment = () => {
   return (
     <>
-      <NavbarMe />
+      <NavTech />
       <Pay />
       <FooterMe />
     </>

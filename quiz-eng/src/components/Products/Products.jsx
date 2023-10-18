@@ -16,8 +16,7 @@ import {
   ProductNumberContainer,
 } from "./Product.elements";
 import data from "../../utils/slider.json";
-import NavbarMe from "../NavbarMe/Navbar";
-import { FooterMe } from "..";
+import { FooterMe, NavTech } from "..";
 
 const imageMapping = {
   "Whispers in the Rails": Whispers,
@@ -57,7 +56,7 @@ const Products = () => {
 
   return (
     <>
-      <NavbarMe />
+      <NavTech />
       <ProductContainer>
         <ProductContainerLeft>
           <ProductImg src={imageMapping[product.name]} alt={product.name} />

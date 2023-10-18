@@ -9,12 +9,24 @@ export const useLesson = () => {
   return useContext(LessonContext);
 };
 
+const generateInitialState = (items) => {
+  const initialState = {};
+
+  items.forEach((item) => {
+    if (!initialState[item.chapterId]) {
+      initialState[item.chapterId] = [];
+    }
+    initialState[item.chapterId][item.lessonId - 1] = item.completed;
+  });
+
+  return initialState;
+};
+
 export const LessonProvider = ({ children }) => {
-  const [lessonsCompleted, setLessonsCompleted] = useState({
-    1: [true, false, false, false, false],
-    2: [false, false, false, false, false],
-    3: [false, false, false, false, false],
-  }); // Initialize as empty
+  const [lessonsCompleted, setLessonsCompleted] = useState(
+    generateInitialState(chapterItems)
+  );
+
   const { user } = useUser(); // Grab user from UserContext
 
   useEffect(() => {
@@ -29,12 +41,7 @@ export const LessonProvider = ({ children }) => {
         setLessonsCompleted(data);
       } else {
         // If no data in the database for this user, initialize it.
-        setLessonsCompleted({
-          1: [true, false, false, false, false],
-          2: [false, false, false, false, false],
-          3: [false, false, false, false, false],
-          // more chapters here
-        });
+        setLessonsCompleted(generateInitialState(chapterItems));
       }
     });
   }, [user]);

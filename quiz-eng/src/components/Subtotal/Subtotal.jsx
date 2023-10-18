@@ -6,13 +6,12 @@ import {
   Subtotalwrapper,
 } from "./Subtotal.elements";
 import { useNavigate } from "react-router-dom";
-import CurrencyFormat from "react-currency-format";
 
 const Subtotal = ({ subtotal }) => {
   const navigate = useNavigate();
   return (
     <Subtotalwrapper>
-      <CurrencyFormat
+      {/* <CurrencyFormat
         renderText={(value) => (
           <>
             <p>
@@ -27,7 +26,7 @@ const Subtotal = ({ subtotal }) => {
         value={subtotal}
         displayType={"text"}
         thousandSeparator={true}
-      />
+      />*/}
       <GiftButton onClick={(e) => navigate("/payment")}>انتقل للدفع</GiftButton>
     </Subtotalwrapper>
   );

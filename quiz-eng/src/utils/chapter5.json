@@ -1,49 +1,45 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "water",
-    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
-    "questionSubText": "water",
-    "correctSequence": [1],
+    "questionExplain": "I read",
+    "answerExplain": " الكلمة الإنجليزية 'I read' تترجم إلى 'انا اقرا' بالعربية",
+    "questionSubText": "I read",
+    "correctSequence": [4, 5],
+    "avatar": "../../assets/dude.png",
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "بنات" },
+      { "answerText": "ياكلون" },
+      { "answerText": "يشربن" },
+      { "answerText": "وفتية" },
+      { "answerText": "انا" },
+      { "answerText": "اقرا" }
     ]
   },
   {
-    "questionText": "أي واحدة من هذه هو الخبز",
-    "questionExplain": "bread",
-    "answerExplain": " الكلمة الإنجليزية 'bread' تترجم إلى 'خبز' بالعربية",
-    "questionType": "type2",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "We read",
+    "questionExplain": "We read",
+    "answerExplain": " الجملة الإنجليزية 'We read' تترجم إلى 'نحن نقرا' بالعربية",
+    "correctSequence": [0, 4],
+    "avatar": "../../assets/indian.png",
+    "questionType": "type3",
     "answerOptions": [
-      {
-        "answerText": "Bread",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/c61a359a01c01fc19bbe6a21592db53b"
-      },
-      {
-        "answerText": "Apple",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/cd1ecb710774af3d4904673137972ef3"
-      },
-      {
-        "answerText": "Water",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/7afea32bcf0e8c6f9d446ad4aad416be"
-      }
+      { "answerText": "نحن" },
+      { "answerText": "تقرأ" },
+      { "answerText": "جريدة" },
+      { "answerText": "والصبيان" },
+      { "answerText": "نقرأ" },
+      { "answerText": "يشربن" }
     ]
   },
-
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "Girl",
     "questionExplain": "Girl",
     "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
     "correctSequence": [2],
+    "avatar": "../../assets/bear.png",
     "questionType": "type1",
     "answerOptions": [
       { "answerText": "رجل" },
@@ -54,32 +50,25 @@
     ]
   },
   {
-    "questionText": "اي واحدة من هذه بنت",
-    "questionExplain": "Girl",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
-    "questionType": "type2",
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "A newspaper",
+    "questionExplain": "A newspaper",
+    "answerExplain": " الجملة الإنجليزية 'A newspaper' تترجم إلى 'صحيفة' بالعربية",
+    "questionType": "type1",
+    "avatar": "../../assets/bear.png",
+    "correctSequence": [2],
     "answerOptions": [
-      {
-        "answerText": "girl",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
-      },
-      {
-        "answerText": "man",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
-      },
-      {
-        "answerText": "boy",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
-      }
+      { "answerText": "وفتية" },
+      { "answerText": "كتاب" },
+      { "answerText": "صحيفة" },
+      { "answerText": "أنا" },
+      { "answerText": "و" }
     ]
   },
   {
     "questionText": "اي واحد من هؤلاء هو الرجل",
-    "questionExplain": "Man",
-    "answerExplain": " الكلمة الإنجليزية 'Man' تترجم إلى 'رجل' بالعربية",
+    "questionExplain": "Newspaper",
+    "answerExplain": " الكلمة الإنجليزية 'Newspaper' تترجم إلى 'جريدة' بالعربية",
     "questionType": "type2",
     "answerOptions": [
       {
@@ -88,9 +77,9 @@
         "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
       },
       {
-        "answerText": "Man",
+        "answerText": "Newspaper",
         "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/a2ec73142749b80a6f1c193bf1c3c342"
       },
       {
         "answerText": "girl",
@@ -104,6 +93,7 @@
     "questionSubText": "The woman eats",
     "questionExplain": "The woman eats",
     "answerExplain": " الجملة الإنجليزية 'The woman eats' تترجم إلى 'المرأة تأكل' بالعربية",
+    "avatar": "../../assets/bear.png",
     "questionType": "type1",
     "correctSequence": [3, 1],
     "answerOptions": [
@@ -121,6 +111,7 @@
     "questionExplain": "I went to school",
     "answerExplain": " الجملة الإنجليزية 'I went to school' تترجم إلى 'أنا ذهبت إلى المدرسة' بالعربية",
     "correctSequence": [2, 0, 3, 1],
+    "avatar": "../../assets/cool.png",
     "questionType": "type3",
     "answerOptions": [
       { "answerText": "went" },
@@ -131,49 +122,51 @@
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Tree",
-    "questionExplain": "Tree",
-    "answerExplain": " الكلمة الإنجليزية 'Tree' تترجم إلى 'شجرة' بالعربية",
-    "correctSequence": [4],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
-    ]
-  },
-  {
-    "questionText": "أي واحدة من هذه هو ماء",
-    "questionType": "type2",
-    "questionExplain": "water",
-    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
-    "answerOptions": [
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
       {
-        "answerText": "Bread",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/c61a359a01c01fc19bbe6a21592db53b"
+        "english": "He",
+        "arabic": "هو"
       },
       {
-        "answerText": "Apple",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/cd1ecb710774af3d4904673137972ef3"
+        "english": "she",
+        "arabic": "هي"
       },
       {
-        "answerText": "Water",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/7afea32bcf0e8c6f9d446ad4aad416be"
+        "english": "they",
+        "arabic": "هم"
+      },
+      {
+        "english": "woman",
+        "arabic": "امراة"
       }
     ]
   },
   {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "انا ذهبت للمدرسة",
+    "questionExplain": "I went to school",
+    "answerExplain": " الجملة الإنجليزية 'I went to school' تترجم إلى 'أنا ذهبت إلى المدرسة' بالعربية",
+    "correctSequence": [2, 0, 3, 1],
+    "avatar": "../../assets/indian.png",
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "went" },
+      { "answerText": "school" },
+      { "answerText": "I" },
+      { "answerText": "to" },
+      { "answerText": "by" }
+    ]
+  },
+  {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "ولد",
-    "questionExplain": "Boy",
-    "answerExplain": " الكلمة الإنجليزية 'Boy' تترجم إلى 'ولد' بالعربية",
+    "questionSubText": "المرأة تأكل التفاحة",
+    "questionExplain": "the woman eats the apple",
+    "answerExplain": " ",
     "questionType": "type4",
-    "correctAnswer": "boy"
+    "correctAnswer": "the woman eats the apple"
   }
 ]

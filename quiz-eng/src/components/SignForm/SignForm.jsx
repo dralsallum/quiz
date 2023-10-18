@@ -29,7 +29,25 @@ const SignForm = () => {
   const navigate = useNavigate();
 
   const getArabicErrorMessage = (englishMessage) => {
-    // ... (same as before)
+    switch (englishMessage) {
+      case "The email address is already in use by another account.":
+        return "عنوان البريد الإلكتروني مستخدم بالفعل من قبل حساب آخر.";
+      case "Invalid password":
+        return "يجب أن تكون كلمة المرور مكونة من 6 عناصر وتحتوي على أحرف وأرقام.";
+      // ... add other translations as needed
+      default:
+        return "حدث خطأ غير معروف. يرجى المحاولة مرة أخرى.";
+    }
+  };
+
+  const isValidPassword = (password) => {
+    const hasNumber = /\d/; // This tests for a number
+    const hasLetter = /[a-zA-Z]/; // This tests for a letter
+    return (
+      password.length >= 6 &&
+      hasNumber.test(password) &&
+      hasLetter.test(password)
+    );
   };
 
   const extractEmailPrefix = (email) => {
@@ -66,14 +84,19 @@ const SignForm = () => {
         }
       })
       .catch((error) => {
-        // Handle error (you probably want to display a message to the user)
-        setErrorMessage(error.message);
+        const arabicError = getArabicErrorMessage(error.message);
+        setErrorMessage(arabicError);
       });
   };
 
   const register = async (e) => {
     e.preventDefault();
     setErrorMessage("");
+    // is valid needed only during registration
+    if (!isValidPassword(password)) {
+      setErrorMessage(getArabicErrorMessage("Invalid password"));
+      return;
+    }
 
     await setPersistence(auth, browserLocalPersistence);
 

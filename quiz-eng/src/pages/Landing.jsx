@@ -1,16 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import {
-  Slider,
-  NavbarMe,
-  Header,
-  About,
-  Who,
-  Footer,
-  FooterMe,
-  Article,
-  Divider,
-} from "../components";
+import { NavbarMe, Header, FooterMe, Article, Divider } from "../components";
 import { analytics } from "../firebase";
 import { logEvent } from "firebase/analytics";
 
@@ -30,7 +20,6 @@ const Landing = () => {
         <NavbarMe />
         <Header />
       </GradientWrapper>
-      <Slider />
       <Article />
       <Divider />
       <Article />

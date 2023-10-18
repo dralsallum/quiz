@@ -1,9 +1,12 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "A boy and a girl",
+    "answerExplain": "الجملة 'A boy and a girl' تترجم إلى 'ولد و بنت'.",
+    "avatar": "../../assets/dude.png",
     "questionSubText": "A boy and a girl",
-    "questionType": "type1",
     "correctSequence": [3, 5, 0],
+    "questionType": "type1",
     "answerOptions": [
       { "answerText": "بنت" },
       { "answerText": "امراة" },
@@ -15,6 +18,9 @@
   },
   {
     "questionText": "اختر الكلمة الناقصة:",
+    "questionExplain": "I ____ an apple",
+    "answerExplain": "يُستخدم الزمن الحاضر البسيط لوصف العادات، الحقائق العامة، الأفعال المتكررة، أو الحالات التي لا تتغير. في هذه الجملة، الشكل الصحيح مع الفاعل 'I' هو 'eat'، مما يجعل الجملة الكاملة 'I eat an apple'.",
+    "avatar": "../../assets/dude.png",
     "questionSubText": "I ____ an apple",
     "correctSequence": [1],
     "questionType": "type3",
@@ -26,6 +32,9 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I am a man",
+    "answerExplain": "يُستخدم الزمن الحاضر البسيط لوصف العادات، الحقائق العامة، الأفعال المتكررة، أو الحالات التي لا تتغير. في هذه الجملة، الشكل الصحيح مع الفاعل 'I' هو 'eat'، مما يجعل الجملة الكاملة 'I am a man'.",
+    "avatar": "../../assets/dude.png",
     "questionSubText": "I am a man",
     "correctSequence": [3, 0],
     "questionType": "type1",
@@ -39,6 +48,9 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "She is a woman",
+    "answerExplain": "الجملة 'She is a woman' تترجم إلى 'هي امرأة'. 'She' هو ضمير مفرد يُستخدم للإشارة إلى الأنثى في اللغة الإنجليزية.",
+    "avatar": "../../assets/dude.png",
     "questionSubText": "She is a woman",
     "correctSequence": [0, 2],
     "questionType": "type1",
@@ -53,7 +65,10 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "i am  ______  girl.",
+    "questionExplain": "i am a girl.",
+    "answerExplain": "نستخدم 'a' قبل الأسماء التي تبدأ بحروف صوتية، وفي هذه الجملة نستخدم 'a' قبل 'girl'.",
     "correctSequence": [1],
+    "avatar": "../../assets/dude.png",
     "questionType": "type1",
     "answerOptions": [
       { "answerText": "-" },
@@ -64,7 +79,10 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "she",
+    "questionExplain": "she",
+    "answerExplain": "الضمير 'she' يُترجم إلى 'هي' ويُستخدم للإشارة إلى الأنثى.",
     "correctSequence": [3],
+    "avatar": "../../assets/dude.png",
     "questionType": "type1",
     "answerOptions": [
       { "answerText": "هذا" },
@@ -77,7 +95,10 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "Eat an orange",
+    "questionExplain": "Eat an orange",
+    "answerExplain": "نستخدم الفعل في المصدر عند إعطاء أمر. 'Eat' هو الأمر و'an orange' هو المكمل.",
     "correctSequence": [5, 2],
+    "avatar": "../../assets/dude.png",
     "questionType": "type1",
     "answerOptions": [
       { "answerText": "واكل" },
@@ -91,7 +112,10 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "Ahmed and I eat",
+    "questionExplain": "Ahmed and I eat",
+    "answerExplain": "نستخدم 'and' لربط بين مكونين في الجملة. هنا، نربط بين 'Ahmed' و'I'.",
     "correctSequence": [1, 4, 3],
+    "avatar": "../../assets/dude.png",
     "questionType": "type1",
     "answerOptions": [
       { "answerText": "رجل" },
@@ -106,6 +130,9 @@
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionSubText": "Eat!",
+    "questionExplain": "Eat!",
+    "answerExplain": "نستخدم الفعل في المصدر عند إعطاء أمر، وهنا 'Eat' هو الأمر.",
+    "avatar": "../../assets/dude.png",
     "correctSequence": [3],
     "questionType": "type1",
     "answerOptions": [
@@ -119,7 +146,10 @@
   {
     "questionText": "اختر الكلمة الناقصة:",
     "questionSubText": "انا ولد وسعد ياكل تفاحة",
+    "questionExplain": "I am a boy and Sad eats an apple",
+    "answerExplain": "تمثل كل كلمة عربية مكافئة بالإنجليزية. مثلاً، 'انا' تُترجم إلى 'I'، و'ولد' إلى 'boy'، وهكذا.",
     "correctSequence": [2, 4, 1, 5, 6, 3, 8, 7, 0],
+    "avatar": "../../assets/dude.png",
     "questionType": "type3",
     "answerOptions": [
       { "answerText": "apple" },

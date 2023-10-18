@@ -1,0 +1,182 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "كل تفاحة",
+    "answerExplain": "",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "كل تفاحة",
+    "correctSequence": [0, 2, 4],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "eat" },
+      { "answerText": "he" },
+      { "answerText": "an" },
+      { "answerText": "drink" },
+      { "answerText": "apple" },
+      { "answerText": "water" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "a woman and an apple",
+    "answerExplain": "",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "a woman and an apple",
+    "correctSequence": [0, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "امراة" },
+      { "answerText": "وبنت" },
+      { "answerText": "وتفاحة" },
+      { "answerText": "تارو" },
+      { "answerText": "فتاة" },
+      { "answerText": "ناكل" }
+    ]
+  },
+  {
+    "questionText": "اي واحدة من هذه بنت",
+    "questionExplain": "Girl",
+    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "girl",
+        "isCorrect": true,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
+      },
+      {
+        "answerText": "man",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+      },
+      {
+        "answerText": "boy",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "The woman drinks water",
+    "answerExplain": " ",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "The woman drinks water",
+    "correctSequence": [1, 2, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "واكل" },
+      { "answerText": "المراة" },
+      { "answerText": "تشرب" },
+      { "answerText": "انا" },
+      { "answerText": "الماء" },
+      { "answerText": "رجل" },
+      { "answerText": "اكل" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "He",
+        "arabic": "هو"
+      },
+      {
+        "english": "she",
+        "arabic": "هي"
+      },
+      {
+        "english": "they",
+        "arabic": "هم"
+      },
+      {
+        "english": "woman",
+        "arabic": "امراة"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "المراة تشرب الماء",
+    "answerExplain": "",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "المراة تشرب الماء",
+    "correctSequence": [1, 6, 7, 4],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "she" },
+      { "answerText": "the" },
+      { "answerText": "eat" },
+      { "answerText": "apple" },
+      { "answerText": "water" },
+      { "answerText": "is" },
+      { "answerText": "woman" },
+      { "answerText": "drinks" }
+    ]
+  },
+  {
+    "questionText": "كيف تقول ... بالإنجليزية؟",
+    "questionExplain": "I drink and she eats",
+    "answerExplain": "",
+    "avatar": "../../assets/bear.png",
+    "questionSubText": "I drink and she eats",
+    "correctSequence": [4, 5, 0, 1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "وهي" },
+      { "answerText": "تاكل " },
+      { "answerText": "الماء" },
+      { "answerText": "واكل" },
+      { "answerText": "انا" },
+      { "answerText": "اشرب" },
+      { "answerText": "خبزاً" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "The men read the newspaper",
+    "answerExplain": "",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "The men read the newspaper",
+    "correctSequence": [1, 2, 0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "صحيفة" },
+      { "answerText": "الرجل" },
+      { "answerText": "يقرؤون" },
+      { "answerText": "خبز" },
+      { "answerText": "الجريدة" },
+      { "answerText": "تفاحة" },
+      { "answerText": "فتيات" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "البنات يشربن العصير",
+    "answerExplain": " ",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "The girls drink juice",
+    "correctSequence": [0, 2, 4, 6],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "The" },
+      { "answerText": "boy" },
+      { "answerText": "girls" },
+      { "answerText": "rice" },
+      { "answerText": "drink" },
+      { "answerText": "sandwich" },
+      { "answerText": "juice" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "الفتيات ياكلون التفاحة",
+    "questionExplain": "",
+    "answerExplain": "",
+    "questionType": "type4",
+    "correctAnswer": "the girls eat the apple"
+  }
+]

@@ -4,25 +4,17 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavbarLogoContainer,
   NavbarContainerImg,
   NavMenu,
-  NavItem,
-  NavLinks,
   NavBtnLink,
-  NavItemBasket,
-  NavBtnBaskets,
-  NavBtnBasketsSpan,
   ButtonMain,
 } from "./Navbar.elements";
 import { Link } from "react-router-dom";
-import { useBasket } from "../../BasketContext";
 import { useUser } from "../../UserContext"; // Import the useUser hook from UserContext
 import { signOut } from "@firebase/auth";
 import { auth } from "../../firebase";
 
 const NavbarMe = () => {
-  const { basketCount, animate } = useBasket();
   const { user, setUser } = useUser(); // Use the user object from UserContext
 
   const emailPrefix = user?.emailPrefix; // Safe-check in case user object is null
@@ -53,20 +45,6 @@ const NavbarMe = () => {
           </Link>
         </NavLogo>
         <NavMenu>
-          <Link
-            to="/checkout"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
-            }}
-          >
-            <NavItemBasket>
-              <NavBtnBaskets color="#ffffff" />
-              <NavBtnBasketsSpan className={animate ? "animate" : ""}>
-                {basketCount}
-              </NavBtnBasketsSpan>
-            </NavItemBasket>
-          </Link>
           {user ? (
             <ButtonMain primary onClick={handleSignOut}>
               تسجيل خروج

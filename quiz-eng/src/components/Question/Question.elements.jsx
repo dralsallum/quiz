@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SuperHeroSVG from "../../assets/super-hero.svg";
+import LessonProvider from "../../LessonContext";
 
 export const AccessibleContainer = styled.div`
   opacity: ${(props) => (props.isAccessible ? 1 : 0.5)};
@@ -132,7 +133,6 @@ export const QuestionBanner = styled.div`
     rgb(67, 45, 176);
   border-radius: 1rem;
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-around;
   color: rgb(255, 255, 255);
   width: 100%; // Add width
@@ -211,10 +211,10 @@ export const QuestionBannerArrowContain = styled.div`
 export const QuestionChapterOneContainer = styled.section`
   margin-bottom: 3rem;
   display: block;
-  border: 2px solid lightgray;
+  border: 2px solid ${(props) => (props.completed ? "#4c47e8" : "lightgray")};
   border-radius: 18px;
   padding: 0.5rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // This adds a mild shadow
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); // This adds a mild shadow
 `;
 export const QuestionChapterOneHeaderContainer = styled.header`
   padding: 0px;
@@ -352,8 +352,6 @@ export const QuestionChapterPictureSection = styled.div`
   width: 5.25rem;
   height: 5.25rem;
   padding: 0.2rem;
-
-  border: ${(props) => (props.completed ? "3px solid green" : "inherit")};
 `;
 export const QuestionChapterPicture = styled.img`
   width: 100%;

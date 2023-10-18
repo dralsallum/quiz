@@ -38,16 +38,15 @@ const imageMapping = {
   "Beyond the clock": Beyond,
 };
 
-const SliderButton = () => {
-  const swiper = useSwiper();
+const SliderButton = ({ swiper }) => {
   return (
     <SliderArrowContainerAll>
       <SliderArrowContainer1>كتب انجليزية للمبتدئاً</SliderArrowContainer1>
       <SliderArrowContainer>
-        <SliderArrowButtonLeft onClick={() => swiper.slidePrev()}>
+        <SliderArrowButtonLeft onClick={() => swiper && swiper.slidePrev()}>
           &lt;
         </SliderArrowButtonLeft>
-        <SliderArrowButtonRight onClick={() => swiper.slideNext()}>
+        <SliderArrowButtonRight onClick={() => swiper && swiper.slideNext()}>
           &gt;
         </SliderArrowButtonRight>
       </SliderArrowContainer>
@@ -57,6 +56,7 @@ const SliderButton = () => {
 
 const Slider = () => {
   const { addToBasket } = useBasket();
+  const [swiperInstance, setSwiperInstance] = React.useState(null);
 
   const handleAddToBasket = (item) => {
     addToBasket({
@@ -100,8 +100,12 @@ const Slider = () => {
   return (
     <SliderWrapper>
       <SliderContainer>
-        <Swiper {...sliderSettings} style={{ overflow: "visible" }}>
-          <SliderButton />
+        <SliderButton swiper={swiperInstance} />
+        <Swiper
+          {...sliderSettings}
+          style={{ overflow: "visible" }}
+          onSwiper={setSwiperInstance}
+        >
           {slides}
         </Swiper>
       </SliderContainer>

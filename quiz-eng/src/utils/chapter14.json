@@ -1,0 +1,161 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Lion",
+    "answerExplain": " الكلمة الإنجليزية 'Lion' تترجم إلى 'أسد' بالعربية",
+    "avatar": "../../assets/lion.png",
+    "questionSubText": "lion",
+    "correctSequence": [1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "قطة" },
+      { "answerText": "أسد" },
+      { "answerText": "كلب" },
+      { "answerText": "فيل" },
+      { "answerText": "حصان" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Elephant",
+    "answerExplain": " الكلمة الإنجليزية 'Elephant' تترجم إلى 'فيل' بالعربية",
+    "avatar": "../../assets/elephant.png",
+    "questionSubText": "elephant",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "قرد" },
+      { "answerText": "نمر" },
+      { "answerText": "أسماك" },
+      { "answerText": "فيل" },
+      { "answerText": "عصفور" }
+    ]
+  },
+  {
+    "questionText": "اي واحدة من هذه ذئب؟",
+    "questionExplain": "Wolf",
+    "answerExplain": " الكلمة الإنجليزية 'Wolf' تترجم إلى 'ذئب' بالعربية",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "wolf",
+        "isCorrect": true,
+        "imgPath": "https://example-url.com/wolf-image"
+      },
+      {
+        "answerText": "cat",
+        "isCorrect": false,
+        "imgPath": "https://example-url.com/cat-image"
+      },
+      {
+        "answerText": "bird",
+        "isCorrect": false,
+        "imgPath": "https://example-url.com/bird-image"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Tiger",
+    "answerExplain": " الكلمة الإنجليزية 'Tiger' تترجم إلى 'نمر' بالعربية",
+    "avatar": "../../assets/tiger.png",
+    "questionSubText": "tiger",
+    "correctSequence": [1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "قرد" },
+      { "answerText": "نمر" },
+      { "answerText": "خروف" },
+      { "answerText": "بقرة" },
+      { "answerText": "جمل" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/animal-matching.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Dog",
+        "arabic": "كلب"
+      },
+      {
+        "english": "Cat",
+        "arabic": "قطة"
+      },
+      {
+        "english": "Fish",
+        "arabic": "أسماك"
+      },
+      {
+        "english": "Bird",
+        "arabic": "عصفور"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Monkey",
+    "answerExplain": " الكلمة الإنجليزية 'Monkey' تترجم إلى 'قرد' بالعربية",
+    "avatar": "../../assets/monkey.png",
+    "questionSubText": "monkey",
+    "correctSequence": [0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "قرد" },
+      { "answerText": "أسد" },
+      { "answerText": "فيل" },
+      { "answerText": "كلب" },
+      { "answerText": "بقرة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Horse",
+    "answerExplain": " الكلمة الإنجليزية 'Horse' تترجم إلى 'حصان' بالعربية",
+    "avatar": "../../assets/horse.png",
+    "questionSubText": "horse",
+    "correctSequence": [4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "نمر" },
+      { "answerText": "ذئب" },
+      { "answerText": "قطة" },
+      { "answerText": "أسماك" },
+      { "answerText": "حصان" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Cow",
+    "answerExplain": " الكلمة الإنجليزية 'Cow' تترجم إلى 'بقرة' بالعربية",
+    "avatar": "../../assets/cow.png",
+    "questionSubText": "cow",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "كلب" },
+      { "answerText": "نمر" },
+      { "answerText": "خروف" },
+      { "answerText": "بقرة" },
+      { "answerText": "جمل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "قطوة",
+    "questionExplain": "cat",
+    "answerExplain": " الكلمة الإنجليزية 'Cat' تترجم إلى 'قطوة' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "Cat"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "قطوة",
+    "questionExplain": "lion",
+    "answerExplain": " الكلمة الإنجليزية 'lion' تترجم إلى 'اسد' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "lion"
+  }
+]

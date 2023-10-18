@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   QuestionBanner,
   QuestionBannerArrowContain,
@@ -6,7 +6,6 @@ import {
   QuestionBannerLast,
   QuestionBannerMain,
   QuestionBannerSub,
-  QuestionChapterItemContainer,
   QuestionChapterItemElement,
   QuestionChapterItemPara,
   QuestionChapterItemPart,
@@ -147,10 +146,12 @@ const Chapter = ({
   const progressWidth = `${(completedLessonsCount / totalLessons) * 100}%`;
 
   return (
-    <QuestionChapterOneContainer>
+    <QuestionChapterOneContainer
+      completed={completedLessonsCount === totalLessons}
+    >
       <QuestionChapterOneHeaderContainer>
         <QuestionChapterOneHeader>
-          الفصل {chapterNumber}
+          الوحدة {chapterNumber}
         </QuestionChapterOneHeader>
         <QuestionChapterOnePara>
           الدروس المكتملة {completedLessonsCount}/{totalLessons}

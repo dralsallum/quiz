@@ -1,0 +1,140 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Astronaut",
+    "answerExplain": "الكلمة الإنجليزية 'Astronaut' تترجم إلى 'رائد فضاء' بالعربية",
+    "avatar": "../../assets/dude3.png",
+    "questionSubText": "astronaut",
+    "correctSequence": [3],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "طائرة" },
+      { "answerText": "مكان" },
+      { "answerText": "كوكب" },
+      { "answerText": "رائد فضاء" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "مذنب",
+    "answerExplain": "الكلمة العربية 'مذنب' تترجم إلى 'Comet' بالإنجليزية",
+    "avatar": "../../assets/indian2.png",
+    "questionSubText": "مذنب",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Asteroid" },
+      { "answerText": "Comet" },
+      { "answerText": "Meteor" },
+      { "answerText": "Planet" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "ثقب أسود",
+    "answerExplain": "الكلمة العربية 'ثقب أسود' تترجم إلى 'Black Hole' بالإنجليزية",
+    "avatar": "../../assets/cool3.png",
+    "questionSubText": "ثقب أسود",
+    "questionType": "type4",
+    "correctAnswer": "black hole"
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Orbit",
+    "answerExplain": "الكلمة الإنجليزية 'Orbit' تترجم إلى 'مدار' بالعربية",
+    "avatar": "../../assets/dude4.png",
+    "questionSubText": "orbit",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "نجم" },
+      { "answerText": "قمر" },
+      { "answerText": "مدار" },
+      { "answerText": "كوكب" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Satellite",
+    "answerExplain": "الكلمة الإنجليزية 'Satellite' تترجم إلى 'قمر صناعي' بالعربية",
+    "avatar": "../../assets/dude5.png",
+    "questionSubText": "satellite",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "نجمة" },
+      { "answerText": "قمر صناعي" },
+      { "answerText": "مكان" },
+      { "answerText": "رائد فضاء" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "كوكب",
+    "answerExplain": "الكلمة العربية 'كوكب' تترجم إلى 'Planet' بالإنجليزية",
+    "avatar": "../../assets/indian3.png",
+    "questionSubText": "كوكب",
+    "correctSequence": [3],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Asteroid" },
+      { "answerText": "Comet" },
+      { "answerText": "Meteor" },
+      { "answerText": "Planet" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "نجمة",
+    "answerExplain": "الكلمة العربية 'نجمة' تترجم إلى 'Star' بالإنجليزية",
+    "avatar": "../../assets/cool4.png",
+    "questionSubText": "نجمة",
+    "questionType": "type4",
+    "correctAnswer": "star"
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Meteor",
+    "answerExplain": "الكلمة الإنجليزية 'Meteor' تترجم إلى 'شهب' بالعربية",
+    "avatar": "../../assets/dude6.png",
+    "questionSubText": "meteor",
+    "correctSequence": [0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "شهب" },
+      { "answerText": "قمر" },
+      { "answerText": "مكان" },
+      { "answerText": "كوكب" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Telescope",
+    "answerExplain": "الكلمة الإنجليزية 'Telescope' تترجم إلى 'تلسكوب' بالعربية",
+    "avatar": "../../assets/dude7.png",
+    "questionSubText": "telescope",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "ميكروسكوب" },
+      { "answerText": "نظارة" },
+      { "answerText": "تلسكوب" },
+      { "answerText": "كاميرا" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "مرصد",
+    "answerExplain": "الكلمة العربية 'مرصد' تترجمإلى 'Observatory' بالإنجليزية",
+    "avatar": "../../assets/cool5.png",
+    "questionSubText": "مرصد",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Telescope" },
+      { "answerText": "Observatory" },
+      { "answerText": "Planetarium" },
+      { "answerText": "Station" }
+    ]
+  }
+]

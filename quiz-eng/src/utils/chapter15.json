@@ -1,0 +1,145 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Pyramid",
+    "answerExplain": " الكلمة الإنجليزية 'Pyramid' تترجم إلى 'هرم' بالعربية",
+    "avatar": "../../assets/pyramid.png",
+    "questionSubText": "pyramid",
+    "correctSequence": [1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "قلعة" },
+      { "answerText": "هرم" },
+      { "answerText": "نصب" },
+      { "answerText": "معبد" },
+      { "answerText": "كنيسة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Castle",
+    "answerExplain": " الكلمة الإنجليزية 'Castle' تترجم إلى 'قلعة' بالعربية",
+    "avatar": "../../assets/castle.png",
+    "questionSubText": "castle",
+    "correctSequence": [0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "قلعة" },
+      { "answerText": "مسجد" },
+      { "answerText": "كاتدرائية" },
+      { "answerText": "معبد" },
+      { "answerText": "كنيسة" }
+    ]
+  },
+  {
+    "questionText": "أي واحدة من هذه قلعة؟",
+    "questionExplain": "Castle",
+    "answerExplain": " الكلمة الإنجليزية 'Castle' تترجم إلى 'قلعة' بالعربية",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "castle",
+        "isCorrect": true,
+        "imgPath": "https://example-url.com/castle-image"
+      },
+      {
+        "answerText": "temple",
+        "isCorrect": false,
+        "imgPath": "https://example-url.com/temple-image"
+      },
+      {
+        "answerText": "church",
+        "isCorrect": false,
+        "imgPath": "https://example-url.com/church-image"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Temple",
+    "answerExplain": " الكلمة الإنجليزية 'Temple' تترجم إلى 'معبد' بالعربية",
+    "avatar": "../../assets/temple.png",
+    "questionSubText": "temple",
+    "correctSequence": [2],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "كاتدرائية" },
+      { "answerText": "هرم" },
+      { "answerText": "معبد" },
+      { "answerText": "قلعة" },
+      { "answerText": "كنيسة" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/landmark-matching.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Monument",
+        "arabic": "نصب"
+      },
+      {
+        "english": "Mosque",
+        "arabic": "مسجد"
+      },
+      {
+        "english": "Cathedral",
+        "arabic": "كاتدرائية"
+      },
+      {
+        "english": "Church",
+        "arabic": "كنيسة"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Cathedral",
+    "answerExplain": " الكلمة الإنجليزية 'Cathedral' تترجم إلى 'كاتدرائية' بالعربية",
+    "avatar": "../../assets/cathedral.png",
+    "questionSubText": "cathedral",
+    "correctSequence": [0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "كاتدرائية" },
+      { "answerText": "قلعة" },
+      { "answerText": "هرم" },
+      { "answerText": "مسجد" },
+      { "answerText": "معبد" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "مسجد",
+    "questionExplain": "mosque",
+    "answerExplain": " الكلمة الإنجليزية 'Mosque' تترجم إلى 'مسجد' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "Mosque"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "نصب",
+    "questionExplain": "monument",
+    "answerExplain": " الكلمة الإنجليزية 'Monument' تترجم إلى 'نصب' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "Monument"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "مسجد",
+    "questionExplain": "mosque",
+    "answerExplain": " الكلمة الإنجليزية 'mosque' تترجم إلى 'مسجد' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "mosque"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "معبد",
+    "questionExplain": "Temple",
+    "answerExplain": " الكلمة الإنجليزية 'Temple' تترجم إلى 'معبد' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "Temple"
+  }
+]

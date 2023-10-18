@@ -18,7 +18,6 @@ import {
   PayTitleContainer,
   PayWrapper,
   PayWrapperTitle,
-  PayّItemsContainer,
 } from "./Pay.elements";
 
 const Pay = () => {
@@ -67,6 +66,8 @@ const Pay = () => {
         <PaySection>
           <PayTitleContainer>
             <PayTitle>طريقة الدفع</PayTitle>
+
+            {/*here will be my api*/}
           </PayTitleContainer>
           <PayAddressContainer></PayAddressContainer>
         </PaySection>

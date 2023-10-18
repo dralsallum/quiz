@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Foot,
   FootCon,
@@ -17,13 +17,18 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStore } from "@fortawesome/free-solid-svg-icons"; // You can replace "faCoffee" with the icon you want.
 
-const QueFooter = () => {
+const QueFooter = ({ showQuestion, showStore, currentComponent }) => {
   return (
     <Footer>
       <FooterNav>
         <FooterWrap>
           <FooterList>
-            <FooterLiLe>
+            <FooterLiLe
+              currentComponent={currentComponent}
+              onClick={() => {
+                showQuestion();
+              }}
+            >
               <FootLiCon>
                 <FootLiIcon>
                   <svg
@@ -45,7 +50,12 @@ const QueFooter = () => {
                 <FootLiTex>التعلم</FootLiTex>
               </FootLiCon>
             </FooterLiLe>
-            <FooterLiRi>
+            <FooterLiRi
+              currentComponent={currentComponent}
+              onClick={() => {
+                showStore();
+              }}
+            >
               <FooterPin>
                 <Foot>
                   <StyledIcon icon={faStore} />

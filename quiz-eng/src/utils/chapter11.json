@@ -1,71 +1,48 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "man",
+    "questionExplain": "لدينا تفاحة",
     "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
     "avatar": "../../assets/cool.png",
-    "questionSubText": "man",
-    "correctSequence": [0],
+    "questionSubText": "لدينا تفاحة",
+    "correctSequence": [0, 2, 3, 6],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "We" },
+      { "answerText": "men" },
+      { "answerText": "have" },
+      { "answerText": "an" },
+      { "answerText": "you" },
+      { "answerText": "boy" },
+      { "answerText": "apple" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "?what's your name",
+    "questionExplain": "They ____ children",
     "answerExplain": " الكلمة الإنجليزية 'What's' تترجم إلى 'ما هو' بالعربية وتستخدم في سؤال الاسم.",
     "avatar": "../../assets/cool.png",
-    "questionSubText": "?your name ___",
-    "correctSequence": [0],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "What's" },
-      { "answerText": "Nice" },
-      { "answerText": "Who are" },
-      { "answerText": "Hello" }
-    ]
-  },
-  {
-    "questionText": "اي واحدة من هذه بنت",
-    "questionExplain": "Girl",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "girl",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
-      },
-      {
-        "answerText": "man",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
-      },
-      {
-        "answerText": "boy",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
-      }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Where are ___ from",
-    "answerExplain": " الكلمة الإنجليزية 'you' تترجم إلى 'أنت' بالعربية وتستخدم في سؤال المنشأ.",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "?Where are ___ from",
+    "questionSubText": "They ____ children",
     "correctSequence": [1],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "he" },
-      { "answerText": "you" },
-      { "answerText": "they" },
-      { "answerText": "we" }
+      { "answerText": "is" },
+      { "answerText": "are" },
+      { "answerText": "am" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "He ___ water",
+    "answerExplain": "",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "?Where are ___ from",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "have" },
+      { "answerText": "had" },
+      { "answerText": "has" }
     ]
   },
   {
@@ -94,17 +71,20 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "How ___ you",
-    "answerExplain": " الكلمة الإنجليزية 'are' تترجم إلى 'هل' بالعربية وتستخدم في سؤال الحالة.",
+    "questionExplain": "انه رجل",
+    "answerExplain": "",
     "avatar": "../../assets/dude.png",
-    "questionSubText": "?How ___ you",
-    "correctSequence": [2],
+    "questionSubText": "انه رجل",
+    "correctSequence": [0, 2, 4, 6],
     "questionType": "type3",
     "answerOptions": [
+      { "answerText": "he" },
+      { "answerText": "rice" },
       { "answerText": "is" },
-      { "answerText": "do" },
-      { "answerText": "are" },
-      { "answerText": "have" }
+      { "answerText": "sandwich" },
+      { "answerText": "a" },
+      { "answerText": "women" },
+      { "answerText": "man" }
     ]
   },
   {
@@ -124,41 +104,51 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Hobby",
+    "questionExplain": "Hobbies are awesome",
     "answerExplain": " الكلمة الإنجليزية 'Hobby' تترجم إلى 'هواية' بالعربية",
     "avatar": "../../assets/dude.png",
-    "questionSubText": "hobby",
-    "correctSequence": [3],
+    "questionSubText": "Hobbies are awesome",
+    "correctSequence": [3, 0],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "كتاب" },
+      { "answerText": "رائعة" },
       { "answerText": "شجرة" },
       { "answerText": "مدينة" },
-      { "answerText": "هواية" },
+      { "answerText": "الهوايات" },
       { "answerText": "بحر" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "City",
+    "questionExplain": "I live in a city",
     "answerExplain": " الكلمة الإنجليزية 'City' تترجم إلى 'مدينة' بالعربية",
     "avatar": "../../assets/indian.png",
-    "questionSubText": "مدينة",
-    "correctSequence": [2],
+    "questionSubText": "انا اعيش في مدينة",
+    "correctSequence": [1, 2, 0, 3, 4],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Country" },
-      { "answerText": "River" },
+      { "answerText": "in" },
+      { "answerText": "I" },
+      { "answerText": "live" },
+      { "answerText": "a" },
       { "answerText": "City" },
       { "answerText": "Mountain" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "صديق",
-    "questionExplain": "Friend",
-    "answerExplain": " الكلمة الإنجليزية 'Friend' تترجم إلى 'صديق' بالعربية",
+    "questionSubText": "هم يشرب الحليب",
+    "questionExplain": "He drinks milk",
+    "answerExplain": "",
     "questionType": "type4",
-    "correctAnswer": "friend"
+    "correctAnswer": "He drinks milk"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "انت تشرب الحليب وانا اشرب الماء",
+    "questionExplain": "you drink milk and i drink water",
+    "answerExplain": "",
+    "questionType": "type4",
+    "correctAnswer": "you drink milk and i drink water"
   }
 ]

@@ -1,181 +1,166 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "water",
-    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
+    "questionExplain": "hello",
+    "answerExplain": " الكلمة الإنجليزية 'hello' تترجم إلى 'مرحبا' بالعربية",
     "avatar": "../../assets/cool.png",
-    "questionSubText": "water",
+    "questionSubText": "hello",
     "correctSequence": [1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "صباح الخير" },
+      { "answerText": "مرحبا" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" },
+      { "answerText": "نعم" }
     ]
   },
   {
-    "questionText": "أي واحدة من هذه هو الخبز",
-    "questionExplain": "bread",
-    "answerExplain": " الكلمة الإنجليزية 'bread' تترجم إلى 'خبز' بالعربية",
-    "questionType": "type2",
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Hello",
+    "answerExplain": " الكلمة الإنجليزية 'Hello' تترجم إلى 'مرحبا' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "مرحبا",
+    "correctSequence": [0],
+    "questionType": "type3",
     "answerOptions": [
+      { "answerText": "Hello" },
+      { "answerText": "Goodbye" },
+      { "answerText": "Thank you" },
+      { "answerText": "Yes" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English greetings with their Arabic translations.",
+    "avatar": "../../assets/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
       {
-        "answerText": "Bread",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/c61a359a01c01fc19bbe6a21592db53b"
+        "english": "Hello",
+        "arabic": "مرحبا"
       },
       {
-        "answerText": "Apple",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/cd1ecb710774af3d4904673137972ef3"
+        "english": "Good morning",
+        "arabic": "صباح الخير"
       },
       {
-        "answerText": "Water",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/7afea32bcf0e8c6f9d446ad4aad416be"
+        "english": "Good evening",
+        "arabic": "مساء الخير"
+      },
+      {
+        "english": "Good night",
+        "arabic": "تصبح على خير"
       }
     ]
   },
-
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Girl",
-    "questionExplain": "Girl",
-    "avatar": "../../assets/india.png",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "questionExplain": "greeting",
+    "answerExplain": " الكلمة الإنجليزية 'greeting' تترجم إلى 'تحية' بالعربية",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "greeting",
     "correctSequence": [2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "فتاة" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "هدية" },
+      { "answerText": "مرحبا" },
+      { "answerText": "تحية" },
+      { "answerText": "صديق" },
+      { "answerText": "درس" }
     ]
   },
   {
-    "questionText": "اي واحدة من هذه بنت",
-    "questionExplain": "Girl",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "girl",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
-      },
-      {
-        "answerText": "man",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
-      },
-      {
-        "answerText": "boy",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
-      }
-    ]
-  },
-  {
-    "questionText": "اي واحد من هؤلاء هو الرجل",
-    "questionExplain": "Man",
-    "answerExplain": " الكلمة الإنجليزية 'Man' تترجم إلى 'رجل' بالعربية",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "Boy",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
-      },
-      {
-        "answerText": "Man",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
-      },
-      {
-        "answerText": "girl",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
-      }
-    ]
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "تحية",
+    "questionExplain": "Greeting",
+    "answerExplain": " الكلمة الإنجليزية 'Greeting' تترجم إلى 'تحية' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "greeting"
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "The woman eats",
-    "questionExplain": "The woman eats",
-    "answerExplain": " الجملة الإنجليزية 'The woman eats' تترجم إلى 'المرأة تأكل' بالعربية",
+    "questionExplain": "good evening",
+    "answerExplain": " الكلمة الإنجليزية 'good evening' تترجم إلى 'مساء الخير' بالعربية",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "good evening",
+    "correctSequence": [0],
     "questionType": "type1",
-    "correctSequence": [3, 1],
     "answerOptions": [
-      { "answerText": "الولد" },
-      { "answerText": "تاكل" },
-      { "answerText": "مياه" },
-      { "answerText": "المراة" },
-      { "answerText": "الماء" },
-      { "answerText": "ياكل" }
+      { "answerText": "مساء الخير" },
+      { "answerText": "صباح الخير" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "انا ذهبت للمدرسة",
-    "questionExplain": "I went to school",
-    "answerExplain": " الجملة الإنجليزية 'I went to school' تترجم إلى 'أنا ذهبت إلى المدرسة' بالعربية",
-    "correctSequence": [2, 0, 3, 1],
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Good evening",
+    "answerExplain": " الكلمة الإنجليزية 'Good evening' تترجم إلى 'مساء الخير' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "مساء الخير",
+    "correctSequence": [1],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "went" },
-      { "answerText": "school" },
-      { "answerText": "I" },
-      { "answerText": "to" },
-      { "answerText": "by" }
+      { "answerText": "Hello" },
+      { "answerText": "Good evening" },
+      { "answerText": "Goodbye" },
+      { "answerText": "Thank you" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Tree",
-    "questionExplain": "Tree",
-    "answerExplain": " الكلمة الإنجليزية 'Tree' تترجم إلى 'شجرة' بالعربية",
+    "questionExplain": "welcome",
+    "answerExplain": " الكلمة الإنجليزية 'welcome' تترجم إلى 'أهلاً وسهلاً' بالعربية",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "welcome",
     "correctSequence": [4],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "صباح الخير" },
+      { "answerText": "مساء الخير" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" },
+      { "answerText": "أهلاً وسهلاً" }
     ]
   },
   {
-    "questionText": "أي واحدة من هذه هو ماء",
+    "questionText": "ما هو معنى الرد على 'مرحبًا'؟",
+    "questionExplain": "Reply to 'Hello'",
+    "avatar": "../../assets/indian.png",
     "questionType": "type2",
-    "questionExplain": "water",
-    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
     "answerOptions": [
       {
-        "answerText": "Bread",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/c61a359a01c01fc19bbe6a21592db53b"
-      },
-      {
-        "answerText": "Apple",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/cd1ecb710774af3d4904673137972ef3"
-      },
-      {
-        "answerText": "Water",
+        "answerText": "Hello!",
         "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/7afea32bcf0e8c6f9d446ad4aad416be"
+        "imgPath": "https://example.com/images/hello_reply.png"
+      },
+      {
+        "answerText": "Bye!",
+        "isCorrect": false,
+        "imgPath": "https://example.com/images/bye.png"
+      },
+      {
+        "answerText": "Thanks!",
+        "isCorrect": false,
+        "imgPath": "https://example.com/images/thanks.png"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "ولد",
-    "questionExplain": "Boy",
-    "answerExplain": " الكلمة الإنجليزية 'Boy' تترجم إلى 'ولد' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "boy"
+    "questionExplain": "Welcome",
+    "answerExplain": " الكلمة الإنجليزية 'Welcome' تترجم إلى 'أهلاً وسهلاً' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "اهلاً وسهلاً",
+    "correctSequence": [4],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "صباح الخير" },
+      { "answerText": "مساء الخير" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" },
+      { "answerText": "أهلاً وسهلاً" }
+    ]
   }
 ]

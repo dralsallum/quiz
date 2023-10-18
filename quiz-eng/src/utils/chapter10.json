@@ -1,32 +1,37 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "man",
-    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
+    "questionExplain": "The child drinks milk",
+    "answerExplain": " ",
     "avatar": "../../assets/cool.png",
-    "questionSubText": "man",
-    "correctSequence": [0],
-    "questionType": "type1",
+    "questionSubText": "الطفل يشرب الحليب",
+    "correctSequence": [4, 2, 3, 5],
+    "questionType": "type3",
     "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "children" },
+      { "answerText": "and" },
+      { "answerText": "child" },
+      { "answerText": "drinks" },
+      { "answerText": "The" },
+      { "answerText": "milk" },
+      { "answerText": "apple" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "?what's your name",
+    "questionExplain": "نحن نقرأ جريدة",
     "answerExplain": " الكلمة الإنجليزية 'What's' تترجم إلى 'ما هو' بالعربية وتستخدم في سؤال الاسم.",
     "avatar": "../../assets/cool.png",
-    "questionSubText": "?your name ___",
-    "correctSequence": [0],
+    "questionSubText": "We read a newspaper",
+    "correctSequence": [0, 4, 3, 5],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "What's" },
-      { "answerText": "Nice" },
-      { "answerText": "Who are" },
+      { "answerText": "We" },
+      { "answerText": "bread" },
+      { "answerText": "drinks" },
+      { "answerText": "a" },
+      { "answerText": "read" },
+      { "answerText": "newspaper" },
       { "answerText": "Hello" }
     ]
   },
@@ -55,17 +60,20 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Where are ___ from",
+    "questionExplain": "A woman and a child",
     "answerExplain": " الكلمة الإنجليزية 'you' تترجم إلى 'أنت' بالعربية وتستخدم في سؤال المنشأ.",
     "avatar": "../../assets/indian.png",
-    "questionSubText": "?Where are ___ from",
-    "correctSequence": [1],
-    "questionType": "type3",
+    "questionSubText": "A woman and a child",
+    "correctSequence": [4, 5, 6],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "he" },
-      { "answerText": "you" },
-      { "answerText": "they" },
-      { "answerText": "we" }
+      { "answerText": "النساء" },
+      { "answerText": "والماء" },
+      { "answerText": "شطيرة" },
+      { "answerText": "والماء" },
+      { "answerText": "امراة" },
+      { "answerText": "و" },
+      { "answerText": "طقل" }
     ]
   },
   {
@@ -94,17 +102,20 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "How ___ you",
-    "answerExplain": " الكلمة الإنجليزية 'are' تترجم إلى 'هل' بالعربية وتستخدم في سؤال الحالة.",
+    "questionExplain": "The child eats an apple",
+    "answerExplain": " ",
     "avatar": "../../assets/dude.png",
-    "questionSubText": "?How ___ you",
-    "correctSequence": [2],
-    "questionType": "type3",
+    "questionSubText": "The child eats an apple",
+    "correctSequence": [2, 0, 4],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "is" },
-      { "answerText": "do" },
-      { "answerText": "are" },
-      { "answerText": "have" }
+      { "answerText": "ياكل" },
+      { "answerText": "جريدة" },
+      { "answerText": "الطفل" },
+      { "answerText": "يشربون" },
+      { "answerText": "تفاحة" },
+      { "answerText": "انه" },
+      { "answerText": "و" }
     ]
   },
   {
@@ -124,41 +135,42 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Hobby",
-    "answerExplain": " الكلمة الإنجليزية 'Hobby' تترجم إلى 'هواية' بالعربية",
+    "questionExplain": "you ___ milk",
+    "answerExplain": "",
     "avatar": "../../assets/dude.png",
-    "questionSubText": "hobby",
+    "questionSubText": "drink",
     "correctSequence": [3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "كتاب" },
-      { "answerText": "شجرة" },
-      { "answerText": "مدينة" },
-      { "answerText": "هواية" },
-      { "answerText": "بحر" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "City",
-    "answerExplain": " الكلمة الإنجليزية 'City' تترجم إلى 'مدينة' بالعربية",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "مدينة",
-    "correctSequence": [2],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Country" },
-      { "answerText": "River" },
-      { "answerText": "City" },
-      { "answerText": "Mountain" }
+      { "answerText": "drink" },
+      { "answerText": "drinking" },
+      { "answerText": "drinks" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "صديق",
-    "questionExplain": "Friend",
+    "questionExplain": "The woman eats rice",
+    "answerExplain": "",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "The woman eats rice",
+    "correctSequence": [6, 2, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "هو" },
+      { "answerText": "انها" },
+      { "answerText": "تاكل" },
+      { "answerText": "الارز" },
+      { "answerText": "اولاد" },
+      { "answerText": "الجريدة" },
+      { "answerText": "المراة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "الرجل ياكل ارز",
+    "questionExplain": "The man eats rice",
     "answerExplain": " الكلمة الإنجليزية 'Friend' تترجم إلى 'صديق' بالعربية",
     "questionType": "type4",
-    "correctAnswer": "friend"
+    "correctAnswer": "The man eats rice"
   }
 ]

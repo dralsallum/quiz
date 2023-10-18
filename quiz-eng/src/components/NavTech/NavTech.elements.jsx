@@ -108,7 +108,6 @@ export const NavrightSecSub = styled.div`
   -webkit-box-align: center;
   align-items: center;
   cursor: pointer;
-  padding: 0.5rem 0.625rem;
   background-color: transparent;
   color: rgb(75, 87, 102);
   transition: all 0.2s ease-in-out 0s;
@@ -136,11 +135,12 @@ export const NavrightSecsSpanSvg = styled.svg`
 `;
 export const NavrightSecsSpanText = styled.span`
   text-overflow: ellipsis;
-  white-space: nowrap;
+
   overflow: hidden;
+  margin-left: 0.2rem;
+  font-size: 14px;
 
   @media screen and (max-width: 31.25rem) {
-    display: none;
   }
 `;
 export const NavrightThi = styled.div`

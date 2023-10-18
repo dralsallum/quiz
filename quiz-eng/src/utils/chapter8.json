@@ -1,33 +1,36 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "man",
-    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
+    "questionExplain": "He has",
+    "answerExplain": "",
     "avatar": "../../assets/cool.png",
-    "questionSubText": "man",
-    "correctSequence": [0],
+    "questionSubText": "He has",
+    "correctSequence": [2, 4],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل" },
+      { "answerText": "البنات" },
+      { "answerText": "التفاحة" },
+      { "answerText": "إنه" },
       { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "لديه" },
+      { "answerText": "تقرأ" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "?what's your name",
-    "answerExplain": " الكلمة الإنجليزية 'What's' تترجم إلى 'ما هو' بالعربية وتستخدم في سؤال الاسم.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "?your name ___",
-    "correctSequence": [0],
-    "questionType": "type3",
+    "questionExplain": "The man has the book",
+    "answerExplain": "",
+    "avatar": "../../assets/bear.png",
+    "questionSubText": "The man has the book",
+    "correctSequence": [0, 2, 4],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "What's" },
-      { "answerText": "Nice" },
-      { "answerText": "Who are" },
-      { "answerText": "Hello" }
+      { "answerText": "الرجل" },
+      { "answerText": "ورجال" },
+      { "answerText": "لديه" },
+      { "answerText": "أطفال" },
+      { "answerText": "الكتاب" },
+      { "answerText": "الارز" }
     ]
   },
   {
@@ -55,17 +58,19 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Where are ___ from",
-    "answerExplain": " الكلمة الإنجليزية 'you' تترجم إلى 'أنت' بالعربية وتستخدم في سؤال المنشأ.",
+    "questionExplain": "He has bread",
+    "answerExplain": " ",
     "avatar": "../../assets/indian.png",
-    "questionSubText": "?Where are ___ from",
-    "correctSequence": [1],
-    "questionType": "type3",
+    "questionSubText": "He has bread",
+    "correctSequence": [4, 3, 1],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "he" },
-      { "answerText": "you" },
-      { "answerText": "they" },
-      { "answerText": "we" }
+      { "answerText": "ارز" },
+      { "answerText": "خبز" },
+      { "answerText": "حليب" },
+      { "answerText": "لديه" },
+      { "answerText": "هو" },
+      { "answerText": "المراة" }
     ]
   },
   {
@@ -94,48 +99,53 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "How ___ you",
-    "answerExplain": " الكلمة الإنجليزية 'are' تترجم إلى 'هل' بالعربية وتستخدم في سؤال الحالة.",
+    "questionExplain": "He reads a book",
+    "answerExplain": "",
     "avatar": "../../assets/dude.png",
-    "questionSubText": "?How ___ you",
-    "correctSequence": [2],
-    "questionType": "type3",
+    "questionSubText": "He reads a book",
+    "correctSequence": [1, 2, 5],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "is" },
-      { "answerText": "do" },
-      { "answerText": "are" },
-      { "answerText": "have" }
+      { "answerText": "الرجل" },
+      { "answerText": "هو" },
+      { "answerText": "يقرأ" },
+      { "answerText": "والبنت" },
+      { "answerText": "التفاحة" },
+      { "answerText": "كتاباً" }
     ]
   },
   {
     "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "___  old are you?",
+    "questionExplain": "I have boys",
     "answerExplain": " الكلمة الإنجليزية 'How old are you' تترجم إلى 'كم عمرك' بالعربية.",
     "avatar": "../../assets/cool.png",
-    "questionSubText": "?old are you ___",
-    "correctSequence": [1],
-    "questionType": "type3",
+    "questionSubText": "I have boys",
+    "correctSequence": [3, 4],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "What's" },
-      { "answerText": "How " },
-      { "answerText": "Who are" },
-      { "answerText": "Hello" }
+      { "answerText": "خبز" },
+      { "answerText": "الماء" },
+      { "answerText": "الارز" },
+      { "answerText": "لدي" },
+      { "answerText": "اولاد" },
+      { "answerText": "هل" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Hobby",
-    "answerExplain": " الكلمة الإنجليزية 'Hobby' تترجم إلى 'هواية' بالعربية",
+    "questionExplain": "You have a book",
+    "answerExplain": " ",
     "avatar": "../../assets/dude.png",
-    "questionSubText": "hobby",
-    "correctSequence": [3],
+    "questionSubText": "You have a book",
+    "correctSequence": [0, 2],
     "questionType": "type1",
     "answerOptions": [
+      { "answerText": "لديك" },
+      { "answerText": "الحليب" },
       { "answerText": "كتاب" },
-      { "answerText": "شجرة" },
-      { "answerText": "مدينة" },
-      { "answerText": "هواية" },
-      { "answerText": "بحر" }
+      { "answerText": "اولاد" },
+      { "answerText": "رجل" },
+      { "answerText": "و" }
     ]
   },
   {
@@ -155,10 +165,10 @@
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "صديق",
-    "questionExplain": "Friend",
-    "answerExplain": " الكلمة الإنجليزية 'Friend' تترجم إلى 'صديق' بالعربية",
+    "questionSubText": "من انت",
+    "questionExplain": "Who are you",
+    "answerExplain": "",
     "questionType": "type4",
-    "correctAnswer": "friend"
+    "correctAnswer": "Who are you"
   }
 ]

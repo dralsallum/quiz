@@ -1,10 +1,10 @@
 import React from "react";
-import { Basket, FooterMe, NavbarMe } from "../components";
+import { Basket, FooterMe, NavTech, NavbarMe } from "../components";
 
 const Checkout = () => {
   return (
     <>
-      <NavbarMe />
+      <NavTech />
       <Basket />
       <FooterMe />
     </>
